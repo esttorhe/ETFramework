@@ -5,7 +5,7 @@ Some categories and helper classes for easy and quicker development.
 ###`CocoaPods`
 This project is also available as a `Pod` spec.
 
-In order to use it you first need to install [CocoaPods](http://cocoapods.org)
+In order to use it you first need to install [`CocoaPods`](http://cocoapods.org)
 
 Generate a `Podfile` and add this:
 
