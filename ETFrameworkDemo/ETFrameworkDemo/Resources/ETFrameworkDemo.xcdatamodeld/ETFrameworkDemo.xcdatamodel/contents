@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Count" representedClassName="Count" syncable="YES">
+        <attribute name="followers" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="following" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="posts" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="stars" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="counts" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Description" representedClassName="Description" syncable="YES">
+        <attribute name="html" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="entities" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entity" inverseName="descriptions" inverseEntity="Entity" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="c_description" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Entity" representedClassName="Entity" syncable="YES">
+        <relationship name="descriptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Description" inverseName="entities" inverseEntity="Description" syncable="YES"/>
+        <relationship name="hashtags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hashtag" inverseName="entities" inverseEntity="Hashtag" syncable="YES"/>
+        <relationship name="links" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Link" inverseName="entities" inverseEntity="Link" syncable="YES"/>
+        <relationship name="mentions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mention" inverseName="entities" inverseEntity="Mention" syncable="YES"/>
+        <relationship name="tweet" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Tweet" inverseName="entities" inverseEntity="Tweet" syncable="YES"/>
+    </entity>
+    <entity name="Hashtag" representedClassName="Hashtag" syncable="YES">
+        <attribute name="len" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pos" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="entities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entity" inverseName="hashtags" inverseEntity="Entity" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="Image" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="is_default" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="cover_image" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Link" representedClassName="Link" syncable="YES">
+        <attribute name="len" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pos" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="entities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entity" inverseName="links" inverseEntity="Entity" syncable="YES"/>
+    </entity>
+    <entity name="Mention" representedClassName="Mention" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_leading" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="len" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pos" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="entities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entity" inverseName="mentions" inverseEntity="Entity" syncable="YES"/>
+    </entity>
+    <entity name="Source" representedClassName="Source" syncable="YES">
+        <attribute name="client_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tweet" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Tweet" inverseName="source" inverseEntity="Tweet" syncable="YES"/>
+    </entity>
+    <entity name="Tweet" representedClassName="Tweet" syncable="YES">
+        <attribute name="canonical_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="html" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="machine_only" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="num_replies" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="num_reposts" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="num_stars" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="reply_to" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thread_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="entities" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Entity" inverseName="tweet" inverseEntity="Entity" syncable="YES"/>
+        <relationship name="source" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Source" inverseName="tweet" inverseEntity="Source" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tweets" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="canonical_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locale" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timezone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="verified_domain" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="avatar_image" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="user" inverseEntity="Image" syncable="YES"/>
+        <relationship name="c_description" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Description" inverseName="user" inverseEntity="Description" syncable="YES"/>
+        <relationship name="counts" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Count" inverseName="user" inverseEntity="Count" syncable="YES"/>
+        <relationship name="cover_image" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="user" inverseEntity="Image" syncable="YES"/>
+        <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tweet" inverseName="user" inverseEntity="Tweet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Count" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Description" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Entity" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Hashtag" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Image" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Link" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Mention" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Source" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Tweet" positionX="160" positionY="192" width="128" height="255"/>
+        <element name="User" positionX="160" positionY="192" width="128" height="255"/>
+    </elements>
+</model>

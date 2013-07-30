@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'ETFrameworkDemo' target in the 'ETFrameworkDemo' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    //////////////////////////////////
+    #import "ETAssert.h"
+    #import "ETCoreFramework.h"
+    #import "ETDataFramework.h"
+#endif
+
+#define kSHOULD_THROW_EXCEPTION YES
+#define _AFNETWORKING_PIN_SSL_CERTIFICATES_ YES
