@@ -16,6 +16,7 @@
     #import "ETAssert.h"
     #import "ETCoreFramework.h"
     #import "ETDataFramework.h"
+    #import "ETUICategories.h"
 #endif
 
 #define kSHOULD_THROW_EXCEPTION YES

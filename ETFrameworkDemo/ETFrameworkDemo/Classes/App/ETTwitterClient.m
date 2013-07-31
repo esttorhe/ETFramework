@@ -3,7 +3,7 @@
 //  ETFrameworkDemo
 //
 //  Created by Esteban Torres on 7/25/13.
-//  Copyright (c) 2013 estebantorres. All rights reserved.
+//  Copyright (c) 2013 Esteban Torres. All rights reserved.
 //
 
 #import "ETTwitterClient.h"

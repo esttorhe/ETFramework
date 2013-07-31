@@ -3,7 +3,7 @@
 //  Esteban Torres - UIAlertView extensions
 //
 //  Created by Esteban Torres on 09/04/13.
-//  Copyright (c) 2013 Log(n). All rights reserved.
+//  Copyright (c) 2013 Esteban Torres. All rights reserved.
 //
 
 #import "ETAlert.h"

@@ -3,7 +3,7 @@
 //  Esteban Torres
 //
 //  Created by Esteban Torres on 4/12/13.
-//  Copyright (c) 2013 Log(n). All rights reserved.
+//  Copyright (c) 2013 Esteban Torres. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

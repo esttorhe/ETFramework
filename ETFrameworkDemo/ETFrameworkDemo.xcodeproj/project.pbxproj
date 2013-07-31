@@ -33,6 +33,7 @@
 		11D0224017A86E8800892D75 /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223A17A86E8800892D75 /* UITextField+VisualHelpers.m */; };
 		11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */; };
 		11D0224217A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223E17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m */; };
+		11D0227C17A9541F00892D75 /* UIViewController+ETFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0227B17A9541F00892D75 /* UIViewController+ETFramework.m */; };
 		11D55C5F17A1C7D7003E6DB3 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C5E17A1C7D7003E6DB3 /* Count.m */; };
 		11D55C6217A1C7D7003E6DB3 /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C6117A1C7D7003E6DB3 /* Source.m */; };
 		11D55C6517A1C7D7003E6DB3 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C6417A1C7D7003E6DB3 /* Image.m */; };
@@ -98,6 +99,9 @@
 		11D0223D17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TextFieldDelegateHelpers.h"; sourceTree = "<group>"; };
 		11D0223E17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TextFieldDelegateHelpers.m"; sourceTree = "<group>"; };
 		11D0224517A87F8A00892D75 /* ETAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAssert.h; sourceTree = "<group>"; };
+		11D0227A17A9541F00892D75 /* UIViewController+ETFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ETFramework.h"; sourceTree = "<group>"; };
+		11D0227B17A9541F00892D75 /* UIViewController+ETFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ETFramework.m"; sourceTree = "<group>"; };
+		11D0227D17A9548300892D75 /* ETUICategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETUICategories.h; sourceTree = "<group>"; };
 		11D55C5D17A1C7D7003E6DB3 /* Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Count.h; sourceTree = "<group>"; };
 		11D55C5E17A1C7D7003E6DB3 /* Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Count.m; sourceTree = "<group>"; };
 		11D55C6017A1C7D7003E6DB3 /* Source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Source.h; sourceTree = "<group>"; };
@@ -295,6 +299,9 @@
 				11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */,
 				11D0223D17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.h */,
 				11D0223E17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m */,
+				11D0227A17A9541F00892D75 /* UIViewController+ETFramework.h */,
+				11D0227B17A9541F00892D75 /* UIViewController+ETFramework.m */,
+				11D0227D17A9548300892D75 /* ETUICategories.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -457,6 +464,7 @@
 				11D0224017A86E8800892D75 /* UITextField+VisualHelpers.m in Sources */,
 				11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */,
 				11D0224217A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m in Sources */,
+				11D0227C17A9541F00892D75 /* UIViewController+ETFramework.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
