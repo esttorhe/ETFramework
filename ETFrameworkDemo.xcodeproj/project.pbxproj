@@ -21,18 +21,18 @@
 		1110D3CA17A0C5A1009A7411 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1110D3C917A0C5A1009A7411 /* Default-568h@2x.png */; };
 		1110D3DB17A0C5DF009A7411 /* ETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3D717A0C5DF009A7411 /* ETAppDelegate.m */; };
 		1110D3DC17A0C5DF009A7411 /* ETFrameworkDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3D917A0C5DF009A7411 /* ETFrameworkDemo.xcdatamodeld */; };
-		1110D40317A0C5EA009A7411 /* ETArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E017A0C5EA009A7411 /* ETArray.m */; };
-		1110D40417A0C5EA009A7411 /* ETBitTampering.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E217A0C5EA009A7411 /* ETBitTampering.m */; };
-		1110D40517A0C5EA009A7411 /* ETDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E617A0C5EA009A7411 /* ETDictionary.m */; };
-		1110D40717A0C5EA009A7411 /* ETObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EA17A0C5EA009A7411 /* ETObject.m */; };
-		1110D40917A0C5EA009A7411 /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EE17A0C5EA009A7411 /* ETString.m */; };
-		1110D40A17A0C5EA009A7411 /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F117A0C5EA009A7411 /* ETCoreData.m */; };
-		1110D40B17A0C5EA009A7411 /* ETImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F417A0C5EA009A7411 /* ETImageCache.m */; };
-		1110D40D17A0C5EA009A7411 /* ETAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3FA17A0C5EA009A7411 /* ETAlert.m */; };
-		11D0223F17A86E8800892D75 /* UITextField+EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */; };
-		11D0224017A86E8800892D75 /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223A17A86E8800892D75 /* UITextField+VisualHelpers.m */; };
-		11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */; };
-		11D0224217A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223E17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m */; };
+		11D0226817A88B2B00892D75 /* ETArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0224917A88B2B00892D75 /* ETArray.m */; };
+		11D0226917A88B2B00892D75 /* ETBitTampering.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0224C17A88B2B00892D75 /* ETBitTampering.m */; };
+		11D0226A17A88B2B00892D75 /* ETDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0225017A88B2B00892D75 /* ETDictionary.m */; };
+		11D0226B17A88B2B00892D75 /* ETObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0225217A88B2B00892D75 /* ETObject.m */; };
+		11D0226C17A88B2B00892D75 /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0225417A88B2B00892D75 /* ETString.m */; };
+		11D0226D17A88B2B00892D75 /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0225717A88B2B00892D75 /* ETCoreData.m */; };
+		11D0226E17A88B2B00892D75 /* ETImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0225A17A88B2B00892D75 /* ETImageCache.m */; };
+		11D0226F17A88B2B00892D75 /* UITextField+EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0225F17A88B2B00892D75 /* UITextField+EmailValidation.m */; };
+		11D0227017A88B2B00892D75 /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0226117A88B2B00892D75 /* UITextField+VisualHelpers.m */; };
+		11D0227117A88B2B00892D75 /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0226317A88B2B00892D75 /* UIView+KeyboardHelpers.m */; };
+		11D0227217A88B2B00892D75 /* UIViewController+TextFieldDelegateHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0226517A88B2B00892D75 /* UIViewController+TextFieldDelegateHelpers.m */; };
+		11D0227317A88B2B00892D75 /* ETAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0226717A88B2B00892D75 /* ETAlert.m */; };
 		11D55C5F17A1C7D7003E6DB3 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C5E17A1C7D7003E6DB3 /* Count.m */; };
 		11D55C6217A1C7D7003E6DB3 /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C6117A1C7D7003E6DB3 /* Source.m */; };
 		11D55C6517A1C7D7003E6DB3 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C6417A1C7D7003E6DB3 /* Image.m */; };
@@ -70,34 +70,34 @@
 		1110D3D617A0C5DF009A7411 /* ETAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAppDelegate.h; sourceTree = "<group>"; };
 		1110D3D717A0C5DF009A7411 /* ETAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAppDelegate.m; sourceTree = "<group>"; };
 		1110D3DA17A0C5DF009A7411 /* ETFrameworkDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ETFrameworkDemo.xcdatamodel; sourceTree = "<group>"; };
-		1110D3DF17A0C5EA009A7411 /* ETArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETArray.h; sourceTree = "<group>"; };
-		1110D3E017A0C5EA009A7411 /* ETArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETArray.m; sourceTree = "<group>"; };
-		1110D3E117A0C5EA009A7411 /* ETBitTampering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETBitTampering.h; sourceTree = "<group>"; };
-		1110D3E217A0C5EA009A7411 /* ETBitTampering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETBitTampering.m; sourceTree = "<group>"; };
-		1110D3E317A0C5EA009A7411 /* ETCoreFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCoreFramework.h; sourceTree = "<group>"; };
-		1110D3E417A0C5EA009A7411 /* ETDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDebugLog.h; sourceTree = "<group>"; };
-		1110D3E517A0C5EA009A7411 /* ETDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDictionary.h; sourceTree = "<group>"; };
-		1110D3E617A0C5EA009A7411 /* ETDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDictionary.m; sourceTree = "<group>"; };
-		1110D3E917A0C5EA009A7411 /* ETObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETObject.h; sourceTree = "<group>"; };
-		1110D3EA17A0C5EA009A7411 /* ETObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETObject.m; sourceTree = "<group>"; };
-		1110D3ED17A0C5EA009A7411 /* ETString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETString.h; sourceTree = "<group>"; };
-		1110D3EE17A0C5EA009A7411 /* ETString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETString.m; sourceTree = "<group>"; };
-		1110D3F017A0C5EA009A7411 /* ETCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCoreData.h; sourceTree = "<group>"; };
-		1110D3F117A0C5EA009A7411 /* ETCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCoreData.m; sourceTree = "<group>"; };
-		1110D3F217A0C5EA009A7411 /* ETDataFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDataFramework.h; sourceTree = "<group>"; };
-		1110D3F317A0C5EA009A7411 /* ETImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETImageCache.h; sourceTree = "<group>"; };
-		1110D3F417A0C5EA009A7411 /* ETImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETImageCache.m; sourceTree = "<group>"; };
-		1110D3F917A0C5EA009A7411 /* ETAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlert.h; sourceTree = "<group>"; };
-		1110D3FA17A0C5EA009A7411 /* ETAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlert.m; sourceTree = "<group>"; };
-		11D0223717A86E8800892D75 /* UITextField+EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmailValidation.h"; sourceTree = "<group>"; };
-		11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmailValidation.m"; sourceTree = "<group>"; };
-		11D0223917A86E8800892D75 /* UITextField+VisualHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VisualHelpers.h"; sourceTree = "<group>"; };
-		11D0223A17A86E8800892D75 /* UITextField+VisualHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VisualHelpers.m"; sourceTree = "<group>"; };
-		11D0223B17A86E8800892D75 /* UIView+KeyboardHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KeyboardHelpers.h"; sourceTree = "<group>"; };
-		11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KeyboardHelpers.m"; sourceTree = "<group>"; };
-		11D0223D17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TextFieldDelegateHelpers.h"; sourceTree = "<group>"; };
-		11D0223E17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TextFieldDelegateHelpers.m"; sourceTree = "<group>"; };
-		11D0224517A87F8A00892D75 /* ETAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAssert.h; sourceTree = "<group>"; };
+		11D0224817A88B2B00892D75 /* ETArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETArray.h; sourceTree = "<group>"; };
+		11D0224917A88B2B00892D75 /* ETArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETArray.m; sourceTree = "<group>"; };
+		11D0224A17A88B2B00892D75 /* ETAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAssert.h; sourceTree = "<group>"; };
+		11D0224B17A88B2B00892D75 /* ETBitTampering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETBitTampering.h; sourceTree = "<group>"; };
+		11D0224C17A88B2B00892D75 /* ETBitTampering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETBitTampering.m; sourceTree = "<group>"; };
+		11D0224D17A88B2B00892D75 /* ETCoreFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCoreFramework.h; sourceTree = "<group>"; };
+		11D0224E17A88B2B00892D75 /* ETDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDebugLog.h; sourceTree = "<group>"; };
+		11D0224F17A88B2B00892D75 /* ETDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDictionary.h; sourceTree = "<group>"; };
+		11D0225017A88B2B00892D75 /* ETDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDictionary.m; sourceTree = "<group>"; };
+		11D0225117A88B2B00892D75 /* ETObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETObject.h; sourceTree = "<group>"; };
+		11D0225217A88B2B00892D75 /* ETObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETObject.m; sourceTree = "<group>"; };
+		11D0225317A88B2B00892D75 /* ETString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETString.h; sourceTree = "<group>"; };
+		11D0225417A88B2B00892D75 /* ETString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETString.m; sourceTree = "<group>"; };
+		11D0225617A88B2B00892D75 /* ETCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCoreData.h; sourceTree = "<group>"; };
+		11D0225717A88B2B00892D75 /* ETCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCoreData.m; sourceTree = "<group>"; };
+		11D0225817A88B2B00892D75 /* ETDataFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDataFramework.h; sourceTree = "<group>"; };
+		11D0225917A88B2B00892D75 /* ETImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETImageCache.h; sourceTree = "<group>"; };
+		11D0225A17A88B2B00892D75 /* ETImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETImageCache.m; sourceTree = "<group>"; };
+		11D0225E17A88B2B00892D75 /* UITextField+EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmailValidation.h"; sourceTree = "<group>"; };
+		11D0225F17A88B2B00892D75 /* UITextField+EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmailValidation.m"; sourceTree = "<group>"; };
+		11D0226017A88B2B00892D75 /* UITextField+VisualHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VisualHelpers.h"; sourceTree = "<group>"; };
+		11D0226117A88B2B00892D75 /* UITextField+VisualHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VisualHelpers.m"; sourceTree = "<group>"; };
+		11D0226217A88B2B00892D75 /* UIView+KeyboardHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KeyboardHelpers.h"; sourceTree = "<group>"; };
+		11D0226317A88B2B00892D75 /* UIView+KeyboardHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KeyboardHelpers.m"; sourceTree = "<group>"; };
+		11D0226417A88B2B00892D75 /* UIViewController+TextFieldDelegateHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TextFieldDelegateHelpers.h"; sourceTree = "<group>"; };
+		11D0226517A88B2B00892D75 /* UIViewController+TextFieldDelegateHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TextFieldDelegateHelpers.m"; sourceTree = "<group>"; };
+		11D0226617A88B2B00892D75 /* ETAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlert.h; sourceTree = "<group>"; };
+		11D0226717A88B2B00892D75 /* ETAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlert.m; sourceTree = "<group>"; };
 		11D55C5D17A1C7D7003E6DB3 /* Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Count.h; sourceTree = "<group>"; };
 		11D55C5E17A1C7D7003E6DB3 /* Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Count.m; sourceTree = "<group>"; };
 		11D55C6017A1C7D7003E6DB3 /* Source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Source.h; sourceTree = "<group>"; };
@@ -225,76 +225,83 @@
 		1110D3D817A0C5DF009A7411 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1110D3DD17A0C5EA009A7411 /* ETFramework */,
+				11D0224617A88B2B00892D75 /* ETFramework */,
 				1110D3D917A0C5DF009A7411 /* ETFrameworkDemo.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		1110D3DD17A0C5EA009A7411 /* ETFramework */ = {
+		11D0224617A88B2B00892D75 /* ETFramework */ = {
 			isa = PBXGroup;
 			children = (
-				1110D3DE17A0C5EA009A7411 /* Core */,
-				1110D3EF17A0C5EA009A7411 /* Data */,
-				1110D3F817A0C5EA009A7411 /* UI */,
+				11D0224717A88B2B00892D75 /* Core */,
+				11D0225517A88B2B00892D75 /* Data */,
+				11D0225B17A88B2B00892D75 /* Network */,
+				11D0225C17A88B2B00892D75 /* UI */,
 			);
-			name = ETFramework;
-			path = ../../../ETFramework;
-			sourceTree = "<group>";
+			path = ETFramework;
+			sourceTree = SOURCE_ROOT;
 		};
-		1110D3DE17A0C5EA009A7411 /* Core */ = {
+		11D0224717A88B2B00892D75 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				11D0224517A87F8A00892D75 /* ETAssert.h */,
-				1110D3DF17A0C5EA009A7411 /* ETArray.h */,
-				1110D3E017A0C5EA009A7411 /* ETArray.m */,
-				1110D3E117A0C5EA009A7411 /* ETBitTampering.h */,
-				1110D3E217A0C5EA009A7411 /* ETBitTampering.m */,
-				1110D3E317A0C5EA009A7411 /* ETCoreFramework.h */,
-				1110D3E417A0C5EA009A7411 /* ETDebugLog.h */,
-				1110D3E517A0C5EA009A7411 /* ETDictionary.h */,
-				1110D3E617A0C5EA009A7411 /* ETDictionary.m */,
-				1110D3E917A0C5EA009A7411 /* ETObject.h */,
-				1110D3EA17A0C5EA009A7411 /* ETObject.m */,
-				1110D3ED17A0C5EA009A7411 /* ETString.h */,
-				1110D3EE17A0C5EA009A7411 /* ETString.m */,
+				11D0224817A88B2B00892D75 /* ETArray.h */,
+				11D0224917A88B2B00892D75 /* ETArray.m */,
+				11D0224A17A88B2B00892D75 /* ETAssert.h */,
+				11D0224B17A88B2B00892D75 /* ETBitTampering.h */,
+				11D0224C17A88B2B00892D75 /* ETBitTampering.m */,
+				11D0224D17A88B2B00892D75 /* ETCoreFramework.h */,
+				11D0224E17A88B2B00892D75 /* ETDebugLog.h */,
+				11D0224F17A88B2B00892D75 /* ETDictionary.h */,
+				11D0225017A88B2B00892D75 /* ETDictionary.m */,
+				11D0225117A88B2B00892D75 /* ETObject.h */,
+				11D0225217A88B2B00892D75 /* ETObject.m */,
+				11D0225317A88B2B00892D75 /* ETString.h */,
+				11D0225417A88B2B00892D75 /* ETString.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		1110D3EF17A0C5EA009A7411 /* Data */ = {
+		11D0225517A88B2B00892D75 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				1110D3F017A0C5EA009A7411 /* ETCoreData.h */,
-				1110D3F117A0C5EA009A7411 /* ETCoreData.m */,
-				1110D3F217A0C5EA009A7411 /* ETDataFramework.h */,
-				1110D3F317A0C5EA009A7411 /* ETImageCache.h */,
-				1110D3F417A0C5EA009A7411 /* ETImageCache.m */,
+				11D0225617A88B2B00892D75 /* ETCoreData.h */,
+				11D0225717A88B2B00892D75 /* ETCoreData.m */,
+				11D0225817A88B2B00892D75 /* ETDataFramework.h */,
+				11D0225917A88B2B00892D75 /* ETImageCache.h */,
+				11D0225A17A88B2B00892D75 /* ETImageCache.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		1110D3F817A0C5EA009A7411 /* UI */ = {
+		11D0225B17A88B2B00892D75 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				11D0223617A86E8800892D75 /* Categories */,
-				1110D3F917A0C5EA009A7411 /* ETAlert.h */,
-				1110D3FA17A0C5EA009A7411 /* ETAlert.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		11D0225C17A88B2B00892D75 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				11D0225D17A88B2B00892D75 /* Categories */,
+				11D0226617A88B2B00892D75 /* ETAlert.h */,
+				11D0226717A88B2B00892D75 /* ETAlert.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		11D0223617A86E8800892D75 /* Categories */ = {
+		11D0225D17A88B2B00892D75 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				11D0223717A86E8800892D75 /* UITextField+EmailValidation.h */,
-				11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */,
-				11D0223917A86E8800892D75 /* UITextField+VisualHelpers.h */,
-				11D0223A17A86E8800892D75 /* UITextField+VisualHelpers.m */,
-				11D0223B17A86E8800892D75 /* UIView+KeyboardHelpers.h */,
-				11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */,
-				11D0223D17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.h */,
-				11D0223E17A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m */,
+				11D0225E17A88B2B00892D75 /* UITextField+EmailValidation.h */,
+				11D0225F17A88B2B00892D75 /* UITextField+EmailValidation.m */,
+				11D0226017A88B2B00892D75 /* UITextField+VisualHelpers.h */,
+				11D0226117A88B2B00892D75 /* UITextField+VisualHelpers.m */,
+				11D0226217A88B2B00892D75 /* UIView+KeyboardHelpers.h */,
+				11D0226317A88B2B00892D75 /* UIView+KeyboardHelpers.m */,
+				11D0226417A88B2B00892D75 /* UIViewController+TextFieldDelegateHelpers.h */,
+				11D0226517A88B2B00892D75 /* UIViewController+TextFieldDelegateHelpers.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -432,14 +439,6 @@
 				1110D3C017A0C5A1009A7411 /* main.m in Sources */,
 				1110D3DB17A0C5DF009A7411 /* ETAppDelegate.m in Sources */,
 				1110D3DC17A0C5DF009A7411 /* ETFrameworkDemo.xcdatamodeld in Sources */,
-				1110D40317A0C5EA009A7411 /* ETArray.m in Sources */,
-				1110D40417A0C5EA009A7411 /* ETBitTampering.m in Sources */,
-				1110D40517A0C5EA009A7411 /* ETDictionary.m in Sources */,
-				1110D40717A0C5EA009A7411 /* ETObject.m in Sources */,
-				1110D40917A0C5EA009A7411 /* ETString.m in Sources */,
-				1110D40A17A0C5EA009A7411 /* ETCoreData.m in Sources */,
-				1110D40B17A0C5EA009A7411 /* ETImageCache.m in Sources */,
-				1110D40D17A0C5EA009A7411 /* ETAlert.m in Sources */,
 				11D55C5F17A1C7D7003E6DB3 /* Count.m in Sources */,
 				11D55C6217A1C7D7003E6DB3 /* Source.m in Sources */,
 				11D55C6517A1C7D7003E6DB3 /* Image.m in Sources */,
@@ -453,10 +452,18 @@
 				110D715317A47D0900200C5F /* Entity.m in Sources */,
 				110D715617A47D0900200C5F /* Mention.m in Sources */,
 				110D715917A47F8200200C5F /* Description.m in Sources */,
-				11D0223F17A86E8800892D75 /* UITextField+EmailValidation.m in Sources */,
-				11D0224017A86E8800892D75 /* UITextField+VisualHelpers.m in Sources */,
-				11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */,
-				11D0224217A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m in Sources */,
+				11D0226817A88B2B00892D75 /* ETArray.m in Sources */,
+				11D0226917A88B2B00892D75 /* ETBitTampering.m in Sources */,
+				11D0226A17A88B2B00892D75 /* ETDictionary.m in Sources */,
+				11D0226B17A88B2B00892D75 /* ETObject.m in Sources */,
+				11D0226C17A88B2B00892D75 /* ETString.m in Sources */,
+				11D0226D17A88B2B00892D75 /* ETCoreData.m in Sources */,
+				11D0226E17A88B2B00892D75 /* ETImageCache.m in Sources */,
+				11D0226F17A88B2B00892D75 /* UITextField+EmailValidation.m in Sources */,
+				11D0227017A88B2B00892D75 /* UITextField+VisualHelpers.m in Sources */,
+				11D0227117A88B2B00892D75 /* UIView+KeyboardHelpers.m in Sources */,
+				11D0227217A88B2B00892D75 /* UIViewController+TextFieldDelegateHelpers.m in Sources */,
+				11D0227317A88B2B00892D75 /* ETAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
