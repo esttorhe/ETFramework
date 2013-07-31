@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "JSONKit.h"
 
 typedef NS_ENUM(NSInteger, kPredefinedExpression) {
     // An NSNumber object
