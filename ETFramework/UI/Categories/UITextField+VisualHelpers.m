@@ -51,7 +51,11 @@ static char const * const ErrorMessageKey = "ErrorMessageKey";
     
     [self addSubview:error];
     
-    __block typeof(error) blockError = error;
+#if __has_feature(objc_arc)
+    __weak typeof(error)blockError = error;
+#else
+    __block typeof(error)blockError = error;
+#endif
     [UIView animateWithDuration:0.5f delay:0.0f options:UIViewAnimationOptionAllowUserInteraction animations:^{
         blockError.alpha = 1.0f;
     } completion:^(BOOL finished) {
