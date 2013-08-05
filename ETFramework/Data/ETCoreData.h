@@ -42,31 +42,31 @@ typedef NS_ENUM(NSInteger, kPredefinedExpression) {
 @interface NSManagedObjectContext (ETCoreData)
 
 - (BOOL) submitChanges;
-- (NSArray*) fetchObjectsOfType:(NSString*)entityName
+- (NSArray*) fetchObjectsOfType:(NSString *)entityName
                       withPredicate:(NSPredicate*)predicate
                 andSortDescriptors:(NSArray*)sortDescriptors;
 - (void) deleteObjects:(NSArray*)objects;
-- (void) deleteObjectsOfType:(NSString*)entityName withPredicate:(NSPredicate*)predicate;
-- (int) countObjectsOfType:(NSString*)entityName withPredicate:(NSPredicate*)predicate;
-- (NSArray*) allObjectsOfType:(NSString*)entityName;
-- (int) scalarExpressionValueForColumn:(NSString*)column expression:(kPredefinedExpression)predefinedExpression entity:(NSString*)entity withPredicate:(NSPredicate*)predicate;
-- (BOOL) hasEntityWithId:(NSString*)entityName idColumn:(NSString*)idColumn identifier:(NSString*)identifier;
-- (id) fetchSingleObject:(NSString*)entity withPredicate:(NSPredicate*)predicate;
+- (void) deleteObjectsOfType:(NSString *)entityName withPredicate:(NSPredicate*)predicate;
+- (int) countObjectsOfType:(NSString *)entityName withPredicate:(NSPredicate*)predicate;
+- (NSArray*) allObjectsOfType:(NSString *)entityName;
+- (int) scalarExpressionValueForColumn:(NSString *)column expression:(kPredefinedExpression)predefinedExpression entity:(NSString *)entity withPredicate:(NSPredicate*)predicate;
+- (BOOL) hasEntityWithId:(NSString *)entityName idColumn:(NSString *)idColumn identifier:(NSString *)identifier;
+- (id) fetchSingleObject:(NSString *)entity withPredicate:(NSPredicate*)predicate;
 
 @end
 
 @interface NSManagedObject (ETCoreData)
 
 - (BOOL) isNew;
-+ (NSString*) entityName;
++ (NSString *) entityName;
 - (void) fillFromDictionary:(NSDictionary *)keyedValues dateFormatter:(NSDateFormatter *)dateFormatter;
 
 @end
 
 @interface NSSet (ETCoreData)
 
-- (NSArray*) ETSortedArray:(NSString*)field;
-- (NSArray*) ETSortedArray:(NSString*)field ascending:(BOOL)ascending;
+- (NSArray*) ETSortedArray:(NSString *)field;
+- (NSArray*) ETSortedArray:(NSString *)field ascending:(BOOL)ascending;
 
 @end
 
@@ -78,12 +78,12 @@ typedef NS_ENUM(NSInteger, kPredefinedExpression) {
     
 }
 
-@property (nonatomic, retain) NSString* dataFilePath;
+@property (nonatomic, retain) NSString * dataFilePath;
 @property (nonatomic, retain) NSManagedObjectModel* managedObjectModel;
 @property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;
 @property (nonatomic, retain) NSPersistentStoreCoordinator* persistentStoreCoordinator;
 
-- (id)initWithDataFile:(NSString*)dataFilePath;
+- (id)initWithDataFile:(NSString *)dataFilePath;
 
 - (void) clearDatabase;
 - (void) cancelChanges;
@@ -91,15 +91,15 @@ typedef NS_ENUM(NSInteger, kPredefinedExpression) {
 
 - (NSDateFormatter*) jsonDateFormatter;
 
-- (BOOL) hasFileBeenProcessed:(NSString*)fileName;
-- (void) markFileAsProcessed:(NSString*)fileName;
+- (BOOL) hasFileBeenProcessed:(NSString *)fileName;
+- (void) markFileAsProcessed:(NSString *)fileName;
 
-- (id) insertObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName;
-- (id) insertObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName dateFormatter:(NSDateFormatter*)dateFormatter;
+- (id) insertObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName;
+- (id) insertObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName dateFormatter:(NSDateFormatter*)dateFormatter;
 
-- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName;
-- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName identifierKey:(NSString*)identifierKey dateFormatter:(NSDateFormatter*)dateFormatter;
-- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName predicate:(NSPredicate*)predicate dateFormatter:(NSDateFormatter*)dateFormatter;
+- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName;
+- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName identifierKey:(NSString *)identifierKey dateFormatter:(NSDateFormatter*)dateFormatter;
+- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName predicate:(NSPredicate*)predicate dateFormatter:(NSDateFormatter*)dateFormatter;
 
 - (NSSet*) addObjectsFromJsonArray:(id)jsonArray addSingleSelector:(SEL)addSingleSelector;
 

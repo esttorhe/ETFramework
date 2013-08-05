@@ -53,14 +53,14 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     return YES;
 }
 
-- (NSArray*) fetchObjectsOfType:(NSString*)entityName
+- (NSArray*) fetchObjectsOfType:(NSString *)entityName
                       withPredicate:(NSPredicate*)predicate
                 andSortDescriptors:(NSArray*)sortDescriptors
 {
     return [self fetchObjectsOfType:entityName withPredicate:predicate andSortDescriptors:sortDescriptors queryLimit:nil shouldForceFaults:nil];
 }
 
-- (NSArray*) fetchObjectsOfType:(NSString*)entityName
+- (NSArray*) fetchObjectsOfType:(NSString *)entityName
                       withPredicate:(NSPredicate*)predicate
                 andSortDescriptors:(NSArray*)sortDescriptors
                           queryLimit:(NSNumber*)limit
@@ -103,14 +103,14 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     }
 }
 
-- (void) deleteObjectsOfType:(NSString*)entityName
+- (void) deleteObjectsOfType:(NSString *)entityName
                withPredicate:(NSPredicate*)predicate
 {
     NSArray* objects = [self fetchObjectsOfType:entityName withPredicate:predicate andSortDescriptors:nil];
     [self deleteObjects:objects];
 }
 
-- (int) countObjectsOfType:(NSString*)entityName
+- (int) countObjectsOfType:(NSString *)entityName
              withPredicate:(NSPredicate*)predicate
 {
     NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
@@ -131,14 +131,14 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     return count;
 }
 
-- (NSArray*) allObjectsOfType:(NSString*)entityName
+- (NSArray*) allObjectsOfType:(NSString *)entityName
 {
     return [self fetchObjectsOfType:entityName withPredicate:nil andSortDescriptors:nil];
 }
 
-- (int) scalarExpressionValueForColumn:(NSString*)column
+- (int) scalarExpressionValueForColumn:(NSString *)column
                             expression:(kPredefinedExpression)predefinedExpression
-                                entity:(NSString*)entity
+                                entity:(NSString *)entity
                          withPredicate:(NSPredicate*)predicate
 {
     NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
@@ -149,7 +149,7 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     NSExpression* keyPathExpression = [NSExpression expressionForKeyPath:column];
     NSExpression* minExpression = [NSExpression expressionForFunction:[self expressionNameFromPredefinedExpression:predefinedExpression] arguments:[NSArray arrayWithObject:keyPathExpression]];
     
-    NSString* name = [NSString stringWithFormat:@"%@%@", [self expressionNameFromPredefinedExpression:predefinedExpression], column];
+    NSString * name = [NSString stringWithFormat:@"%@%@", [self expressionNameFromPredefinedExpression:predefinedExpression], column];
     NSExpressionDescription* expressionDescription = [[NSExpressionDescription alloc] init];
     expressionDescription.name = name;
     expressionDescription.expression = minExpression;
@@ -174,14 +174,14 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     return result;
 }
 
-- (BOOL) hasEntityWithId:(NSString*)entityName idColumn:(NSString*)idColumn identifier:(NSString*)identifier
+- (BOOL) hasEntityWithId:(NSString *)entityName idColumn:(NSString *)idColumn identifier:(NSString *)identifier
 {
-    NSString* formatter = [NSString stringWithFormat:@"%@ = %@", idColumn, @"%@"];
+    NSString * formatter = [NSString stringWithFormat:@"%@ = %@", idColumn, @"%@"];
     NSPredicate* predicate = [NSPredicate predicateWithFormat:formatter, identifier];
     return ([self countObjectsOfType:entityName withPredicate:predicate] > 0);
 }
 
-- (id) fetchSingleObject:(NSString*)entity withPredicate:(NSPredicate*)predicate
+- (id) fetchSingleObject:(NSString *)entity withPredicate:(NSPredicate*)predicate
 {
     NSArray* results = [self fetchObjectsOfType:entity withPredicate:predicate andSortDescriptors:nil queryLimit:[NSNumber numberWithUnsignedInteger:1] shouldForceFaults:nil];
     if (results != nil && results.count > 0)
@@ -240,7 +240,7 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
 #pragma mark - NSManagedObject (ETCoreData)
 @implementation NSManagedObject (ETCoreData)
 
-+ (NSString*) entityName
++ (NSString *) entityName
 {
     return NSStringFromClass([self class]);
 }
@@ -261,14 +261,14 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
 #pragma mark - NSSet (ETCoreData)
 @implementation NSSet (ETCoreData)
 
-- (NSArray*) ETSortedArray:(NSString*)field
+- (NSArray*) ETSortedArray:(NSString *)field
 {
     return [self ETSortedArray:field ascending:YES];
 }
 
-- (NSArray*) ETSortedArray:(NSString*)field ascending:(BOOL)ascending
+- (NSArray*) ETSortedArray:(NSString *)field ascending:(BOOL)ascending
 {
-    return [self sortedArrayUsingDescriptors:[NSArray sortDescriptor:field Ascending:ascending]];
+    return [self sortedArrayUsingDescriptors:[NSArray sortDescriptor:field ascending:ascending]];
 }
 
 @end
@@ -288,7 +288,7 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-- (id)initWithDataFile:(NSString*)dataFilePath
+- (id)initWithDataFile:(NSString *)dataFilePath
 {
     self = [super init];
     if (self) 
@@ -361,13 +361,13 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     return dateFormatter;
 }
 
-- (BOOL) hasFileBeenProcessed:(NSString*)fileName
+- (BOOL) hasFileBeenProcessed:(NSString *)fileName
 {
     NSDictionary* d = [[NSUserDefaults standardUserDefaults] dictionaryForKey:ET_CORE_DATA_STORE_IMPORT_FILES_KEY];
     return ([d objectForKey:[fileName lastPathComponent]] != nil);
 }
 
-- (void) markFileAsProcessed:(NSString*)fileName
+- (void) markFileAsProcessed:(NSString *)fileName
 {
     NSMutableDictionary* md = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] dictionaryForKey:ET_CORE_DATA_STORE_IMPORT_FILES_KEY]];
     [md setObject:@"true" forKey:[fileName lastPathComponent]];
@@ -376,18 +376,18 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
 }
 
 
-- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName
+- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName
 {
     return [self updateObjectFromJson:jsonDictionary entityName:entityName identifierKey:ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH dateFormatter:[self jsonDateFormatter]];
 }
 
-- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName identifierKey:(NSString*)identifierKey dateFormatter:(NSDateFormatter*)dateFormatter
+- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName identifierKey:(NSString *)identifierKey dateFormatter:(NSDateFormatter*)dateFormatter
 {
     if (jsonDictionary != nil && [jsonDictionary isKindOfClass:[NSDictionary class]])
     {
         id identifier = [jsonDictionary objectForKey:identifierKey];
         
-        NSString* predicateString = [NSString stringWithFormat:@"%@ = %@", identifierKey, @"%@"];
+        NSString * predicateString = [NSString stringWithFormat:@"%@ = %@", identifierKey, @"%@"];
         NSPredicate* predicate = [NSPredicate predicateWithFormat:predicateString, identifier];
         return [self updateObjectFromJson:jsonDictionary entityName:entityName predicate:predicate dateFormatter:dateFormatter];
     }
@@ -395,7 +395,7 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     return nil;
 }
 
-- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName predicate:(NSPredicate*)predicate dateFormatter:(NSDateFormatter*)dateFormatter
+- (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName predicate:(NSPredicate*)predicate dateFormatter:(NSDateFormatter*)dateFormatter
 {
     if (jsonDictionary != nil && [jsonDictionary isKindOfClass:[NSDictionary class]])
     {
@@ -418,12 +418,12 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     return nil;
 }
 
-- (id) insertObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName
+- (id) insertObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName
 {
     return [self insertObjectFromJson:jsonDictionary entityName:entityName dateFormatter:[self jsonDateFormatter]];
 }
 
-- (id) insertObjectFromJson:(id)jsonDictionary entityName:(NSString*)entityName dateFormatter:(NSDateFormatter*)dateFormatter
+- (id) insertObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName dateFormatter:(NSDateFormatter*)dateFormatter
 {
     id obj = [NSEntityDescription insertNewObjectForEntityForName:entityName inManagedObjectContext:self.managedObjectContext];
     [obj fillFromDictionary:jsonDictionary dateFormatter:dateFormatter];

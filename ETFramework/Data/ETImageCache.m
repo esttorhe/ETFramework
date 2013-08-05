@@ -11,10 +11,10 @@
 
 @implementation ETImageCache
 
-+ (NSString*) cachePathForURL:(NSURL*)url
++ (NSString *) cachePathForURL:(NSURL*)url
 {
-	NSString* cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-	NSString* path = [url absoluteString];
+	NSString * cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+	NSString * path = [url absoluteString];
 	path = [[path componentsSeparatedByCharactersInSet:[[NSCharacterSet alphanumericCharacterSet] invertedSet]] componentsJoinedByString:@"-"];
 	path = [cachePath stringByAppendingPathComponent:path];
 	path = [path stringByAppendingString:@".png"];
@@ -29,7 +29,7 @@
         UIImage* image = [ETImageCache bundleImageForUrl:url];
         if (image == nil)
         {
-            NSString* path = [ETImageCache cachePathForURL:url];
+            NSString * path = [ETImageCache cachePathForURL:url];
             image = [UIImage imageWithContentsOfFile:path];
         }
         
@@ -43,8 +43,8 @@
 	
 + (void) cacheImage:(UIImage*)image forURL:(NSURL*)url
 {
-	NSData* data = UIImagePNGRepresentation(image);
-	NSString* path = [ETImageCache cachePathForURL:url];
+	NSData * data = UIImagePNGRepresentation(image);
+	NSString * path = [ETImageCache cachePathForURL:url];
 	
 	[data writeToFile:path atomically:YES];
 }
@@ -81,7 +81,7 @@
 
 + (void) clearImageCacheForURL:(NSURL*)url
 {
-    NSString* path = [ETImageCache cachePathForURL:url];
+    NSString * path = [ETImageCache cachePathForURL:url];
     NSFileManager* fm = [NSFileManager defaultManager];
     if ([fm fileExistsAtPath:path])
     {
