@@ -188,40 +188,25 @@ static UIAlertViewDelegateQueue* theUIAlertViewDelegateQueue = nil;
 	NSMutableArray* argumentArray = [[NSMutableArray alloc] init];
 	va_list argList;
 	va_start(argList, defaultButtonTitle);
-	NSString* otherButtonTitle = va_arg(argList, NSString*);
+	NSString * otherButtonTitle = va_arg(argList, NSString *);
 	if (otherButtonTitle)
 	{
-		NSString* buttonMessage = va_arg(argList, NSString*);
+		NSString * buttonMessage = va_arg(argList, NSString *);
 		while (buttonMessage)
 		{
 			[argumentArray addObject:[NSString stringWithString:buttonMessage]];
-			buttonMessage = va_arg(argList, NSString*);
+			buttonMessage = va_arg(argList, NSString *);
 		}
 	}
 	va_end(argList);
     
-	self = [self initWithTitle:title message:message delegate:delegate cancelButtonTitle:defaultButtonTitle otherButtonTitles:(NSString*)otherButtonTitle,nil];
+	self = [self initWithTitle:title message:message delegate:delegate cancelButtonTitle:defaultButtonTitle otherButtonTitles:(NSString *)otherButtonTitle,nil];
 	for (int i = 0; i < [argumentArray count]; i++)
 	{
 		[self addButtonWithTitle:[argumentArray objectAtIndex:i]];
 	}
     
 	return self;
-}
-
-+ (id)okCancelAlert:(NSString *)title message:(NSString *)message completionHandler:(void (^)(NSInteger buttonIndex))completionHandler
-{
-	return [[UIAlertView alloc] initWithTitle:title message:message completionHandler:completionHandler buttonTitles:@"Cancel", @"Ok", nil];
-}
-
-+ (id)oneButtonAlert:(NSString *)title message:(NSString *)message button:(NSString*)button completionHandler:(void (^)(NSInteger buttonIndex))completionHandler
-{
-	return [[UIAlertView alloc] initWithTitle:title message:message completionHandler:completionHandler buttonTitles:button, nil];
-}
-
-+ (id)twoButtonAlert:(NSString *)title message:(NSString *)message buttonOne:(NSString*)buttonOne buttonTwo:(NSString*)buttonTwo completionHandler:(void (^)(NSInteger buttonIndex))completionHandler
-{
-	return [[UIAlertView alloc] initWithTitle:title message:message completionHandler:completionHandler buttonTitles:buttonOne, buttonTwo, nil];
 }
 
 @end
