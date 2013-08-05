@@ -81,7 +81,7 @@ id is_null(id A, id B)
             NSArray* propKeys = [propDefs allKeys];
             if (propKeys)
             {
-                for (NSString* key in propKeys)
+                for (NSString * key in propKeys)
                 {
                     id value = [dictionary objectForKey:key];
                     
@@ -121,7 +121,7 @@ id is_null(id A, id B)
             NSArray* propKeys = [propDefs allKeys];
             if (propKeys)
             {
-                for (NSString* key in propKeys)
+                for (NSString * key in propKeys)
                 {
                     // Get the value for the property key
                     // out of the dictionary
@@ -217,13 +217,13 @@ id is_null(id A, id B)
     {
         objc_property_t property = properties[i];
         
-        NSString* propName = [NSString stringWithUTF8String:property_getName(property)];
+        NSString * propName = [NSString stringWithUTF8String:property_getName(property)];
         
-        NSString* attrs = [NSString stringWithUTF8String: property_getAttributes(property)];
+        NSString * attrs = [NSString stringWithUTF8String: property_getAttributes(property)];
         NSArray* attrParts = [attrs componentsSeparatedByString:@","];
         if (attrParts != nil && attrParts.count > 0)
         {
-            NSString* className = [[attrParts objectAtIndex:0] substringFromIndex:1];
+            NSString * className = [[attrParts objectAtIndex:0] substringFromIndex:1];
             className = [className stringByReplacingOccurrencesOfString:@"@" withString:@""];
             className = [className stringByReplacingOccurrencesOfString:@"\"" withString:@""];
             [propDefs setObject:className forKey:propName];

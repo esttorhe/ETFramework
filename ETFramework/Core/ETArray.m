@@ -9,12 +9,12 @@
 
 @implementation NSArray (ETArray)
 
-+ (NSArray*) sortDescriptor:(NSString*)column
++ (NSArray*) sortDescriptor:(NSString *)column
 {
-    return [NSArray sortDescriptor:column Ascending:YES];
+    return [NSArray sortDescriptor:column ascending:YES];
 }
 
-+ (NSArray*) sortDescriptor:(NSString*)column Ascending:(BOOL)ascending
++ (NSArray*) sortDescriptor:(NSString *)column ascending:(BOOL)ascending
 {
     NSSortDescriptor* sd = [[NSSortDescriptor alloc] initWithKey:column ascending:ascending];
     return [NSArray arrayWithObject:sd];    
@@ -25,14 +25,14 @@
 
 @implementation NSSet (ETSorting)
 
-- (NSArray*) sortByField:(NSString*)field
+- (NSArray*) sortByField:(NSString *)field
 {
     return [self sortByField:field ascending:YES];
 }
 
-- (NSArray*) sortByField:(NSString*)field ascending:(BOOL)ascending
+- (NSArray*) sortByField:(NSString *)field ascending:(BOOL)ascending
 {
-    return [self sortedArrayUsingDescriptors:[NSArray sortDescriptor:field Ascending:ascending]]; 
+    return [self sortedArrayUsingDescriptors:[NSArray sortDescriptor:field ascending:ascending]]; 
 }
 
 @end

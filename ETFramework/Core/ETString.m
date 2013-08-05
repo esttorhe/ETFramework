@@ -28,7 +28,7 @@
     return YES;
 }
 
-- (NSData*) toHexData
+- (NSData *) toHexData
 {
 	int length = self.length;
 	
@@ -40,7 +40,7 @@
 	
 	for (int i = 0; i < length; i += 2)
 	{
-		NSScanner* sc = [NSScanner scannerWithString:(NSString*)[self substringWithRange:NSMakeRange(i, 2)]];
+		NSScanner* sc = [NSScanner scannerWithString:(NSString *)[self substringWithRange:NSMakeRange(i, 2)]];
 		unsigned int hex = 0;
 		if ([sc scanHexInt:&hex])
 		{
@@ -63,7 +63,7 @@
     return [[NSString alloc] initWithBytes:data length:length encoding:NSUTF8StringEncoding];
 }
 
-+ (NSString*) formatCurrency:(NSDecimalNumber*)value WithLocale:(NSLocale*)locale
++ (NSString *) formatCurrencyAmount:(NSDecimalNumber *)value withLocale:(NSLocale *)locale
 {
     NSNumberFormatter* nf = [[NSNumberFormatter alloc] init];
     nf.numberStyle = NSNumberFormatterCurrencyStyle;
@@ -71,24 +71,24 @@
     return [nf stringForObjectValue:value];
 }
 
-- (NSString*) parseQueryStringArg:(NSString*)argName
+- (NSString *) parseQueryStringArg:(NSString *)argName
 {
-    NSString* wholeArgName = [NSString stringWithFormat:@"%@=", argName];
+    NSString * wholeArgName = [NSString stringWithFormat:@"%@=", argName];
     if ([self rangeOfString:wholeArgName].location != NSNotFound)
     {
-        NSString* authError = [[self componentsSeparatedByString:@"="] lastObject];
+        NSString * authError = [[self componentsSeparatedByString:@"="] lastObject];
         return authError;
     }
     
     return nil;
 }
 
-- (NSString*) trimWhitespace
+- (NSString *) trimWhitespace
 {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
-- (BOOL) containsString:(NSString*)subString
+- (BOOL) containsString:(NSString *)subString
 {
     BOOL isStringThere = YES;
     NSRange rangeOfSubString  = [self rangeOfString:subString];
@@ -106,7 +106,7 @@
 #pragma mark - NSData+ETStringTampering
 @implementation NSData (ETStringTampering)
 
-- (NSString*) toHexString
+- (NSString *) toHexString
 {
 	NSMutableString* sb = [[NSMutableString alloc] init];
     
@@ -125,12 +125,12 @@
 #pragma mark - NSNumber+ETStringTampering
 @implementation NSNumber (ETStringTampering)
 
-- (NSString*) formatAsCurrency
+- (NSString *) formatAsCurrency
 {
     return [self formatAsCurrency:[NSLocale currentLocale]];
 }
 
-- (NSString*) formatAsCurrency:(NSLocale*)locale
+- (NSString *) formatAsCurrency:(NSLocale *)locale
 {
     NSNumberFormatter* nf = [[NSNumberFormatter alloc] init];
     nf.numberStyle = NSNumberFormatterCurrencyStyle;
@@ -143,19 +143,19 @@
 #pragma mark - NSDate+ETStringTampering
 @implementation NSDate (ETStringTampering)
 
-- (NSString*) formatMonthDayYear
+- (NSString *) formatMonthDayYear
 {
 	int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
 	NSDateComponents* dc = [[NSCalendar currentCalendar] components:flags fromDate:self];
 	return [NSString stringWithFormat:@"%02d-%02d-%04d", dc.month, dc.day, dc.year];
 }
 
-- (NSString*) formatMMDDYY
+- (NSString *) formatMMDDYY
 {
     return [self formatMMDDYY:@"/"];
 }
 
-- (NSString*) formatMMDDYY:(NSString*)separator
+- (NSString *) formatMMDDYY:(NSString *)separator
 {
 	int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
 	NSDateComponents* dc = [[NSCalendar currentCalendar] components:flags fromDate:self];
@@ -187,18 +187,18 @@ static NSDateFormatter* kMediumDateTimeFormatter = nil;
     return kMediumDateTimeFormatter;
 }
 
-- (NSString*) formatMediumDate
+- (NSString *) formatMediumDate
 {
     return [[NSDate cachedMediumDateFormatter] stringFromDate:self];
 }
 
-- (NSString*) formatMediumDateTime
+- (NSString *) formatMediumDateTime
 {
     return [[NSDate cachedMediumDateTimeFormatter] stringFromDate:self];
 }
 
 // yyyy-MM-dd HH:mm:ss
-- (NSString*) formatYYYYMMdd_HHmmss
+- (NSString *) formatYYYYMMdd_HHmmss
 {
     int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     NSDateComponents* dc = [[NSCalendar currentCalendar] components:flags fromDate:self];
@@ -227,12 +227,12 @@ static NSDateFormatter* kMediumDateTimeFormatter = nil;
     return dateString;
 }
 
-- (NSString*) formatAsDeltaFromNow
+- (NSString *) formatAsDeltaFromNow
 {
-    return [self formatAsDeltaFromNow:YES];
+    return [self formatAsDeltaFromNowWithTimeZoneAdjustment:YES];
 }
 
-- (NSString*) formatAsDeltaFromNow:(BOOL)adjustTimeZone
+- (NSString *) formatAsDeltaFromNowWithTimeZoneAdjustment:(BOOL)adjustTimeZone
 {
 	NSTimeInterval timeZoneDiff = 0;
     if (adjustTimeZone)
@@ -304,7 +304,7 @@ static NSDateFormatter* kMediumDateTimeFormatter = nil;
     return ageStr;
 }
 
-+ (NSString*) dayOfMonthSuffix:(int)dayOfMonth
++ (NSString *) dayOfMonthSuffix:(int)dayOfMonth
 {
     switch (dayOfMonth)
     {
@@ -360,7 +360,7 @@ static NSDateFormatter* kDayOfWeekFormatter = nil;
     return kDayOfWeekFormatter;
 }
 
-- (NSString*) dayOfWeek
+- (NSString *) dayOfWeek
 {
     return [[NSDate cachedDayOfWeekFormatter] stringFromDate:self];
 }
@@ -377,7 +377,7 @@ static NSDateFormatter* kMonthOfYearFormatter = nil;
     return kMonthOfYearFormatter;
 }
 
-- (NSString*) monthOfYear
+- (NSString *) monthOfYear
 {
     return [[NSDate cachedMonthOfYearFormatter] stringFromDate:self];
 }
@@ -394,9 +394,9 @@ static NSDateFormatter* kDayOfMonthFormatter = nil;
     return kDayOfMonthFormatter;
 }
 
-- (NSString*) dayOfMonth
+- (NSString *) dayOfMonth
 {
-    NSString* str = [[NSDate cachedDayOfMonthFormatter] stringFromDate:self];
+    NSString * str = [[NSDate cachedDayOfMonthFormatter] stringFromDate:self];
     int dayValue = [str intValue];
     return [str stringByAppendingString:[NSDate dayOfMonthSuffix:dayValue]];
 }
@@ -425,12 +425,12 @@ static NSDateFormatter* kTimeOfDayFormatter = nil;
     return kTimeOfDayFormatter;
 }
 
-- (NSString*) timeOfDay
+- (NSString *) timeOfDay
 {
     return [[NSDate cachedTimeOfDayFormatter] stringFromDate:self];
 }
 
-- (NSString*) verboseTimeOfDay
+- (NSString *) verboseTimeOfDay
 {
     return [NSString stringWithFormat:@"%@, %@ %@ %@", [self dayOfWeek], [self monthOfYear], [self dayOfMonth], [self timeOfDay]];
 }
@@ -440,17 +440,17 @@ static NSDateFormatter* kTimeOfDayFormatter = nil;
 #pragma mark - NSBundle+ETStringTampering
 @implementation NSBundle (ETStringTampering)
 
-+ (NSString*) versionLabel
++ (NSString *) versionLabel
 {
     return [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
 }
 
-+ (NSString*) copyrightLabel
++ (NSString *) copyrightLabel
 {
     return [[NSBundle mainBundle] infoDictionary][@"NSHumanReadableCopyright"];
 }
 
-+ (NSString*) bundleIdentifier
++ (NSString *) bundleIdentifier
 {
     return [[NSBundle mainBundle] infoDictionary][@"CFBundleIdentifier"];
 }

@@ -25,7 +25,7 @@ NSString * const kETDefuaultJSONDateFormatter   =   @"yyyy-MM-dd'T'HH:mm:ss'Z'";
 
 @implementation NSDictionary (ETFramework)
 
-- (id) nonNullObjectForKey:(NSString*)key forClass:(Class)forClass
+- (id) nonNullObjectForKey:(NSString *)key forClass:(Class)forClass
 {
     id value = [self objectForKey:key];
     if (value != nil && ![value isKindOfClass:[NSNull class]])
@@ -39,25 +39,23 @@ NSString * const kETDefuaultJSONDateFormatter   =   @"yyyy-MM-dd'T'HH:mm:ss'Z'";
     return nil;
 }
 
-- (id) nonNullObjectForKey:(NSString*)key
+- (id) nonNullObjectForKey:(NSString *)key
 {
     return [self nonNullObjectForKey:key forClass:nil];
 }
 
-- (NSDate*) dateForKey:(NSString*)key withFormatter:(NSString*)dateFormatter
+- (NSDate *) dateForKey:(NSString *)key withFormatter:(NSDateFormatter *)dateFormatter
 {
     id value = [self nonNullObjectForKey:key];
     if (value)
     {
-        NSDateFormatter* df = [[NSDateFormatter alloc] init];
-        [df setDateFormat:dateFormatter];
-        value = [df dateFromString:value];
+        value = [dateFormatter dateFromString:value];
     }
     
     return value;
 }
 
-- (NSDictionary*) dictionaryForKey:(NSString*)key
+- (NSDictionary *) dictionaryForKey:(NSString *)key
 {
     return [self nonNullObjectForKey:key forClass:[NSDictionary class]];
 }

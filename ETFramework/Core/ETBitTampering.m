@@ -79,7 +79,7 @@
 	return data;
 }
 
-- (NSString*) stringAtIndex:(NSUInteger)index withEncoding:(NSStringEncoding)encoding
+- (NSString *) stringAtIndex:(NSUInteger)index withEncoding:(NSStringEncoding)encoding
 {
     NSUInteger length = [self uint32AtIndex:index];
     index += sizeof(UInt32);
@@ -142,7 +142,7 @@
 	[self appendBytes:&data length:sizeof(data)];
 }
 
-- (void) appendString:(NSString*)data withEncoding:(NSStringEncoding)encoding
+- (void) appendString:(NSString *)data withEncoding:(NSStringEncoding)encoding
 {
 	if (data != nil)
 	{
