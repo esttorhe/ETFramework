@@ -38,7 +38,7 @@
 - (void) hideErrorBorder;
 
 /**
- Shows the error message associated to the `UITextField` instance on the top half part of it.
+ Shows the errorMessage associated to the `UITextField` instance on the top half part of it.
  
  @see -errorMessage;
  */
