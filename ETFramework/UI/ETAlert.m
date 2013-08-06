@@ -179,7 +179,7 @@ static UIAlertViewDelegateQueue* theUIAlertViewDelegateQueue = nil;
 {
     ETDebugLog(@"### Error: %@", error);
     NSMutableString *message = [NSMutableString stringWithString:[error localizedDescription]];
-    NSArray* detailedErrors = error.userInfo[NSDetailedErrorsKey];
+    NSArray* detailedErrors = error.userInfo[NSUnderlyingErrorKey];
     if (detailedErrors != nil
         && [detailedErrors count] > 0){
         for (NSError* de in detailedErrors){
