@@ -177,7 +177,17 @@ static UIAlertViewDelegateQueue* theUIAlertViewDelegateQueue = nil;
 + (void) showAlertWithAppTitleAndError:(NSError *)error
                      completionHandler:(void (^)(NSInteger))completionHandler
 {
-    NSString *message = [error localizedDescription];
+    ETDebugLog(@"### Error: %@", error);
+    NSMutableString *message = [NSMutableString stringWithString:[error localizedDescription]];
+    NSArray* detailedErrors = error.userInfo[NSDetailedErrorsKey];
+    if (detailedErrors != nil
+        && [detailedErrors count] > 0){
+        for (NSError* de in detailedErrors){
+            [message appendFormat:@"\n%@", de.localizedDescription];
+            ETDebugLog(@"\t### DetailedError: %@", [de userInfo]);
+        }
+    }
+    
     [self showAlertWithAppTitleAndMessage:message completionHandler:completionHandler];
 }
 
