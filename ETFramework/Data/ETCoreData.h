@@ -259,7 +259,8 @@ typedef NS_ENUM(NSInteger, kPredefinedExpression) {
 /**
  Iterates through the list of `NSManagedObject` on the local database and calls `deleteObjectsOfType:withPredicate` on `-managedObjectContext`.
  
- @see `NSManagedObjectContext deleteObjectsOfType:withPredicate`
+ // @see `NSManagedObjectContext deleteObjectsOfType:withPredicate`
+ // The @see statement was removed because appledoc can't find the crossreference
  */
 - (void) clearDatabase;
 
@@ -271,7 +272,8 @@ typedef NS_ENUM(NSInteger, kPredefinedExpression) {
 /**
  Calls the `submitChanges` method on `managedObjectContext`.
  
- @see `NSManagedObjectContext+(ETCoreData) deletedObjectsOfType:withPredicate`
+ // @see `NSManagedObjectContext+(ETCoreData) deletedObjectsOfType:withPredicate`
+ // The @see statement was removed because appledoc can't find the crossreference
  */
 - (void) submitChanges;
 
