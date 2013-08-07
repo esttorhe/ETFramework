@@ -258,21 +258,6 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
 
 @end
 
-#pragma mark - NSSet (ETCoreData)
-@implementation NSSet (ETCoreData)
-
-- (NSArray*) ETSortedArray:(NSString *)field
-{
-    return [self ETSortedArray:field ascending:YES];
-}
-
-- (NSArray*) ETSortedArray:(NSString *)field ascending:(BOOL)ascending
-{
-    return [self sortedArrayUsingDescriptors:[NSArray sortDescriptor:field ascending:ascending]];
-}
-
-@end
-
 #pragma mark - ETCoreDataStore (PrivateInterface)
 @interface ETCoreDataStore (PrivateInterface)
 
