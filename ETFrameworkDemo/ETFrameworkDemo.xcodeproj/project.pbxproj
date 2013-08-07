@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		112211BF17B0209D001B5DB7 /* ETFramework_Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 112211C217B0209D001B5DB7 /* Build configuration list for PBXAggregateTarget "ETFramework_Documentation" */;
+			buildPhases = (
+				112211C317B020B5001B5DB7 /* Generate documentation */,
+			);
+			dependencies = (
+			);
+			name = ETFramework_Documentation;
+			productName = ETFramework_Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		110D715317A47D0900200C5F /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D715217A47D0900200C5F /* Entity.m */; };
 		110D715617A47D0900200C5F /* Mention.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D715517A47D0900200C5F /* Mention.m */; };
@@ -27,8 +41,8 @@
 		1110D40717A0C5EA009A7411 /* ETObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EA17A0C5EA009A7411 /* ETObject.m */; };
 		1110D40917A0C5EA009A7411 /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EE17A0C5EA009A7411 /* ETString.m */; };
 		1110D40A17A0C5EA009A7411 /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F117A0C5EA009A7411 /* ETCoreData.m */; };
-		1110D40B17A0C5EA009A7411 /* ETImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F417A0C5EA009A7411 /* ETImageCache.m */; };
 		1110D40D17A0C5EA009A7411 /* ETAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3FA17A0C5EA009A7411 /* ETAlert.m */; };
+		11A3661317AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A3661217AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m */; };
 		11D0223F17A86E8800892D75 /* UITextField+EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */; };
 		11D0224017A86E8800892D75 /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223A17A86E8800892D75 /* UITextField+VisualHelpers.m */; };
 		11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */; };
@@ -86,10 +100,10 @@
 		1110D3F017A0C5EA009A7411 /* ETCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCoreData.h; sourceTree = "<group>"; };
 		1110D3F117A0C5EA009A7411 /* ETCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCoreData.m; sourceTree = "<group>"; };
 		1110D3F217A0C5EA009A7411 /* ETDataFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDataFramework.h; sourceTree = "<group>"; };
-		1110D3F317A0C5EA009A7411 /* ETImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETImageCache.h; sourceTree = "<group>"; };
-		1110D3F417A0C5EA009A7411 /* ETImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETImageCache.m; sourceTree = "<group>"; };
 		1110D3F917A0C5EA009A7411 /* ETAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlert.h; sourceTree = "<group>"; };
 		1110D3FA17A0C5EA009A7411 /* ETAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlert.m; sourceTree = "<group>"; };
+		11A3661117AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ETFramework_MBProgressHUD.h"; sourceTree = "<group>"; };
+		11A3661217AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ETFramework_MBProgressHUD.m"; sourceTree = "<group>"; };
 		11D0223717A86E8800892D75 /* UITextField+EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmailValidation.h"; sourceTree = "<group>"; };
 		11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmailValidation.m"; sourceTree = "<group>"; };
 		11D0223917A86E8800892D75 /* UITextField+VisualHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VisualHelpers.h"; sourceTree = "<group>"; };
@@ -272,8 +286,6 @@
 				1110D3F017A0C5EA009A7411 /* ETCoreData.h */,
 				1110D3F117A0C5EA009A7411 /* ETCoreData.m */,
 				1110D3F217A0C5EA009A7411 /* ETDataFramework.h */,
-				1110D3F317A0C5EA009A7411 /* ETImageCache.h */,
-				1110D3F417A0C5EA009A7411 /* ETImageCache.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -288,9 +300,19 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		11A3661017AB1F4900C066CB /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				11A3661117AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.h */,
+				11A3661217AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		11D0223617A86E8800892D75 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				11A3661017AB1F4900C066CB /* MBProgressHUD */,
 				11D0223717A86E8800892D75 /* UITextField+EmailValidation.h */,
 				11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */,
 				11D0223917A86E8800892D75 /* UITextField+VisualHelpers.h */,
@@ -379,6 +401,7 @@
 			projectRoot = "";
 			targets = (
 				1110D3AD17A0C5A1009A7411 /* ETFrameworkDemo */,
+				112211BF17B0209D001B5DB7 /* ETFramework_Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -399,6 +422,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		112211C317B020B5001B5DB7 /* Generate documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"EstebanTorres\";\ncompanyID=\"es.estebantorr\";\ncompanyURL=\"http://estebantorr.es\";\ntarget=\"iphoneos\";\noutputPath=\"~/Code/Personal/Help/ETFramework\";\nprojectName=\"ETFramework\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${projectName}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--merge-categories \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--install-docset \\\n--print-information-block-titles \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--ignore \"*.m\" \\\n--include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\" \\\n--index-desc \"${PROJECT_DIR}/README.md\" \\\n\"${PROJECT_DIR}/../${projectName}\"";
+		};
 		A2515A6765AF46D0BBFF6733 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,7 +482,6 @@
 				1110D40717A0C5EA009A7411 /* ETObject.m in Sources */,
 				1110D40917A0C5EA009A7411 /* ETString.m in Sources */,
 				1110D40A17A0C5EA009A7411 /* ETCoreData.m in Sources */,
-				1110D40B17A0C5EA009A7411 /* ETImageCache.m in Sources */,
 				1110D40D17A0C5EA009A7411 /* ETAlert.m in Sources */,
 				11D55C5F17A1C7D7003E6DB3 /* Count.m in Sources */,
 				11D55C6217A1C7D7003E6DB3 /* Source.m in Sources */,
@@ -465,6 +501,7 @@
 				11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */,
 				11D0224217A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m in Sources */,
 				11D0227C17A9541F00892D75 /* UIViewController+ETFramework.m in Sources */,
+				11A3661317AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +583,11 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETFrameworkDemo/ETFrameworkDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					useMBProgressHUD,
+				);
 				INFOPLIST_FILE = "ETFrameworkDemo/ETFrameworkDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -561,6 +603,20 @@
 				INFOPLIST_FILE = "ETFrameworkDemo/ETFrameworkDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		112211C017B0209D001B5DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		112211C117B0209D001B5DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -581,6 +637,15 @@
 			buildConfigurations = (
 				1110D3D117A0C5A1009A7411 /* Debug */,
 				1110D3D217A0C5A1009A7411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112211C217B0209D001B5DB7 /* Build configuration list for PBXAggregateTarget "ETFramework_Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112211C017B0209D001B5DB7 /* Debug */,
+				112211C117B0209D001B5DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
