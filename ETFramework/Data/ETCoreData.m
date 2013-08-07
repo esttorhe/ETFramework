@@ -8,7 +8,6 @@
 #import "ETCoreFramework.h"
 #import "ETCoreData.h"
 #import "ETDebugLog.h"
-#import "ETImageCache.h"
 #import <objc/runtime.h>
 
 static NSString * const ET_CORE_DATA_STORE_IMPORT_FILES_KEY = @"ETCoreDataStoreImportFiles";
