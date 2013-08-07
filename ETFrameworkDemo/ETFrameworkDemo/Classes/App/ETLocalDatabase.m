@@ -28,7 +28,7 @@ static ETLocalDatabase* theLocalDatabase = nil;
     return theLocalDatabase;
 }
 
-+ (NSString*) localDatabasePath
++ (NSString *) localDatabasePath
 {
     return [[NSHomeDirectory() stringByAppendingPathComponent:@"Library"] stringByAppendingPathComponent:@"ETFrameworkDemoDB.sqlite"];
 }
