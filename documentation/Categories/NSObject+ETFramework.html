@@ -1,0 +1,772 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSObject(ETFramework) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ETFramework </a></h1>
+				<a id="developerHome" href="../index.html">EstebanTorres</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSObject(ETFramework) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/attachUserInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- attachUserInfo:</option>
+	
+	<option value="//api/name/attachUserInfo:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- attachUserInfo:forKey:</option>
+	
+	<option value="//api/name/initFromDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- initFromDictionary:</option>
+	
+	<option value="//api/name/initFromDictionary:dateFormatter:">&nbsp;&nbsp;&nbsp;&nbsp;- initFromDictionary:dateFormatter:</option>
+	
+	<option value="//api/name/updateDataWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- updateDataWithDictionary:</option>
+	
+	<option value="//api/name/updateDataWithDictionary:dateFormatter:">&nbsp;&nbsp;&nbsp;&nbsp;- updateDataWithDictionary:dateFormatter:</option>
+	
+	<option value="//api/name/userInfo">&nbsp;&nbsp;&nbsp;&nbsp;- userInfo</option>
+	
+	<option value="//api/name/userInfoForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- userInfoForKey:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Runtime data linking.">Runtime data linking.</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_KVO manipulation methods.">KVO manipulation methods.</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachUserInfo:">attachUserInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachUserInfo:forKey:">attachUserInfo:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initFromDictionary:">initFromDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initFromDictionary:dateFormatter:">initFromDictionary:dateFormatter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateDataWithDictionary:">updateDataWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateDataWithDictionary:dateFormatter:">updateDataWithDictionary:dateFormatter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userInfo">userInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userInfoForKey:">userInfoForKey:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSObject(ETFramework) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSObject(ETFramework) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ETObject.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>NSObject (ETFramework)</code> is a helper class that provides extra methods for better and easiest handling of <code>NSObject</code>.</p>
+
+<h3>Attaching extra data</h3>
+
+<ul>
+<li>Provides helper methods to attach and retrieve objects to specific <code>NSObject</code>.</li>
+</ul>
+
+
+<h3>NSDictionary initialization and manipulation</h3>
+
+<ul>
+<li>Provides some extra methods to manipulate <code>NSDictionary</code> objects.</li>
+</ul>
+
+
+<h3>Helper methods</h3>
+
+<ul>
+<li>Also provides some extra methods available as <code>C</code> functions.</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Runtime data linking." name="task_Runtime data linking."></a>
+						<h3 class="subsubtitle task-title">Runtime data linking.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachUserInfo:">&ndash;&nbsp;attachUserInfo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userInfo">&ndash;&nbsp;userInfo</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachUserInfo:forKey:">&ndash;&nbsp;attachUserInfo:forKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userInfoForKey:">&ndash;&nbsp;userInfoForKey:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="KVO manipulation methods." name="task_KVO manipulation methods."></a>
+						<h3 class="subsubtitle task-title">KVO manipulation methods.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initFromDictionary:">&ndash;&nbsp;initFromDictionary:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initFromDictionary:dateFormatter:">&ndash;&nbsp;initFromDictionary:dateFormatter:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateDataWithDictionary:">&ndash;&nbsp;updateDataWithDictionary:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateDataWithDictionary:dateFormatter:">&ndash;&nbsp;updateDataWithDictionary:dateFormatter:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attachUserInfo:" title="attachUserInfo:"></a>
+	<h3 class="subsubtitle method-title">attachUserInfo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dynamically attach an object to a <code>NSObject</code> instance using the <code>runtime</code> framework with a predefined key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)attachUserInfo:(id)<em>userInfo</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userInfo</em></dt>
+			<dd><p>The object that will be &lsquo;linked&rsquo; to the <code>NSObject</code> instance.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attachUserInfo:forKey:" title="attachUserInfo:forKey:"></a>
+	<h3 class="subsubtitle method-title">attachUserInfo:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dynamically attach an object to a <code>NSObject</code> instance using the <code>runtime</code> framework and links it using the provided key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)attachUserInfo:(id)<em>userInfo</em> forKey:(char const *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userInfo</em></dt>
+			<dd><p>The object that will be &lsquo;linked&rsquo; to the <code>NSObject</code> instance.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The custom key that will be used to attach the object to the <code>NSObject</code> instance.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initFromDictionary:" title="initFromDictionary:"></a>
+	<h3 class="subsubtitle method-title">initFromDictionary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes an <code>NSObject</code> using the provided <code>NSDictionary</code> object and KVC.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initFromDictionary:(NSDictionary *)<em>dictionary</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The <code>NSDictionary</code> object that will be used to &lsquo;feed&rsquo; the <code>NSObject</code> properties.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized <code>NSObject</code> instance with the properties set to the matching keys/fields provided by the defined <code>NSDictionary</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initFromDictionary:dateFormatter:" title="initFromDictionary:dateFormatter:"></a>
+	<h3 class="subsubtitle method-title">initFromDictionary:dateFormatter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes an <code>NSObject</code> using the provided <code>NSDictionary</code> object and KVC with the provided <code>NSDateFormatter</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initFromDictionary:(NSDictionary *)<em>dictionary</em> dateFormatter:(NSDateFormatter *)<em>dateFormatter</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The <code>NSDictionary</code> object that will be used to &lsquo;feed&rsquo; the <code>NSObject</code> properties.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dateFormatter</em></dt>
+			<dd><p>The <code>NSDateFormatter</code> that will be used to format all the <code>NSDate</code> objects found on the provided <code>NSDictionary</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized <code>NSObject</code> instance with the properties set to the matching keys/fields provided by the defined <code>NSDictionary</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateDataWithDictionary:" title="updateDataWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">updateDataWithDictionary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates an <code>NSObject</code> using the provided <code>NSDictionary</code> object and KVC.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)updateDataWithDictionary:(NSDictionary *)<em>dictionary</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The <code>NSDictionary</code> object that will be used to &lsquo;feed&rsquo; the <code>NSObject</code> properties.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <code>NSObject</code> instance with its properties set to the matching keys/fields provided by the defined <code>NSDictionary</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateDataWithDictionary:dateFormatter:" title="updateDataWithDictionary:dateFormatter:"></a>
+	<h3 class="subsubtitle method-title">updateDataWithDictionary:dateFormatter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates an <code>NSObject</code> using the provided <code>NSDictionary</code> object and KVC with the provided <code>NSDateFormatter</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)updateDataWithDictionary:(NSDictionary *)<em>dictionary</em> dateFormatter:(NSDateFormatter *)<em>dateFormatter</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The <code>NSDictionary</code> object that will be used to &lsquo;feed&rsquo; the <code>NSObject</code> properties.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dateFormatter</em></dt>
+			<dd><p>The <code>NSDateFormatter</code> that will be used to format all the <code>NSDate</code> objects found on the provided <code>NSDictionary</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <code>NSObject</code> instance with its properties set to the matching keys/fields provided by the defined <code>NSDictionary</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userInfo" title="userInfo"></a>
+	<h3 class="subsubtitle method-title">userInfo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the object attached to the <code>NSObject</code> instance &lsquo;linked&rsquo; with the predefined key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)userInfo</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The object attached to the <code>NSObject</code> instance &lsquo;linked&rsquo; with the predefined key.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userInfoForKey:" title="userInfoForKey:"></a>
+	<h3 class="subsubtitle method-title">userInfoForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the object attached to the <code>NSObject</code> instance using the provided key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)userInfoForKey:(char const *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The custom key that will be used to try and retrieve a &lsquo;linked&rsquo; object with this <code>NSObject</code> instance.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The object attached to the <code>NSObject</code> instance &lsquo;linked&rsquo; with the provided key.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 EstebanTorres. All rights reserved. (Last updated: 2013-08-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

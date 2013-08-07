@@ -1,0 +1,964 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSData(ETBitTampering) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ETFramework </a></h1>
+				<a id="developerHome" href="../index.html">EstebanTorres</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSData(ETBitTampering) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/doubleAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- doubleAtIndex:</option>
+	
+	<option value="//api/name/floatAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- floatAtIndex:</option>
+	
+	<option value="//api/name/sint16AtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sint16AtIndex:</option>
+	
+	<option value="//api/name/sint32AtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sint32AtIndex:</option>
+	
+	<option value="//api/name/sint64AtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sint64AtIndex:</option>
+	
+	<option value="//api/name/sint8AtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sint8AtIndex:</option>
+	
+	<option value="//api/name/stringAtIndex:withEncoding:">&nbsp;&nbsp;&nbsp;&nbsp;- stringAtIndex:withEncoding:</option>
+	
+	<option value="//api/name/uint16AtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- uint16AtIndex:</option>
+	
+	<option value="//api/name/uint32AtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- uint32AtIndex:</option>
+	
+	<option value="//api/name/uint64AtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- uint64AtIndex:</option>
+	
+	<option value="//api/name/uint8AtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- uint8AtIndex:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_UInt&lt;#&gt; retrieval methods.">UInt&lt;#&gt; retrieval methods.</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SInt&lt;#&gt; retrieval methods.">SInt&lt;#&gt; retrieval methods.</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Float &amp; Double retrieval methods.">Float &amp; Double retrieval methods.</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_String retrieval methods.">String retrieval methods.</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doubleAtIndex:">doubleAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/floatAtIndex:">floatAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sint16AtIndex:">sint16AtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sint32AtIndex:">sint32AtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sint64AtIndex:">sint64AtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sint8AtIndex:">sint8AtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringAtIndex:withEncoding:">stringAtIndex:withEncoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uint16AtIndex:">uint16AtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uint32AtIndex:">uint32AtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uint64AtIndex:">uint64AtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uint8AtIndex:">uint8AtIndex:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSData(ETBitTampering) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSData(ETBitTampering) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ETBitTampering.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>NSData (ETBitTampering)</code> is a helper class that allows easy <code>NSData</code> objects manipulation.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="UInt&lt;#&gt; retrieval methods." name="task_UInt&lt;#&gt; retrieval methods."></a>
+						<h3 class="subsubtitle task-title">UInt&lt;#&gt; retrieval methods.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uint8AtIndex:">&ndash;&nbsp;uint8AtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uint16AtIndex:">&ndash;&nbsp;uint16AtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uint32AtIndex:">&ndash;&nbsp;uint32AtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uint64AtIndex:">&ndash;&nbsp;uint64AtIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="SInt&lt;#&gt; retrieval methods." name="task_SInt&lt;#&gt; retrieval methods."></a>
+						<h3 class="subsubtitle task-title">SInt&lt;#&gt; retrieval methods.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sint8AtIndex:">&ndash;&nbsp;sint8AtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sint16AtIndex:">&ndash;&nbsp;sint16AtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sint32AtIndex:">&ndash;&nbsp;sint32AtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sint64AtIndex:">&ndash;&nbsp;sint64AtIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Float &amp; Double retrieval methods." name="task_Float &amp; Double retrieval methods."></a>
+						<h3 class="subsubtitle task-title">Float &amp; Double retrieval methods.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/floatAtIndex:">&ndash;&nbsp;floatAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doubleAtIndex:">&ndash;&nbsp;doubleAtIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="String retrieval methods." name="task_String retrieval methods."></a>
+						<h3 class="subsubtitle task-title">String retrieval methods.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringAtIndex:withEncoding:">&ndash;&nbsp;stringAtIndex:withEncoding:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/doubleAtIndex:" title="doubleAtIndex:"></a>
+	<h3 class="subsubtitle method-title">doubleAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>double</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)doubleAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>double</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>double</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/floatAtIndex:" title="floatAtIndex:"></a>
+	<h3 class="subsubtitle method-title">floatAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>float</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)floatAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>float</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>float</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sint16AtIndex:" title="sint16AtIndex:"></a>
+	<h3 class="subsubtitle method-title">sint16AtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>SInt16</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SInt16)sint16AtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>SInt16</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>SInt16</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sint32AtIndex:" title="sint32AtIndex:"></a>
+	<h3 class="subsubtitle method-title">sint32AtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>SInt32</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SInt32)sint32AtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>SInt32</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>SInt32</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sint64AtIndex:" title="sint64AtIndex:"></a>
+	<h3 class="subsubtitle method-title">sint64AtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>SInt64</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SInt64)sint64AtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>SInt64</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>SInt64</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sint8AtIndex:" title="sint8AtIndex:"></a>
+	<h3 class="subsubtitle method-title">sint8AtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>SInt8</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SInt8)sint8AtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>SInt8</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>SInt8</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringAtIndex:withEncoding:" title="stringAtIndex:withEncoding:"></a>
+	<h3 class="subsubtitle method-title">stringAtIndex:withEncoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>NSString</code> object from the character at the specified index with the provided encoding.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringAtIndex:(NSUInteger)<em>index</em> withEncoding:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The index of the &ldquo;character&rdquo; that will be converted to <code>NSString</code></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>The <code>NSStringEncoding</code> that should be used to convert the character into <code>NSString</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>NSString</code> object from the index specified formatted using the provided encoding.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uint16AtIndex:" title="uint16AtIndex:"></a>
+	<h3 class="subsubtitle method-title">uint16AtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>UInt16</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UInt16)uint16AtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>UInt16</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>UInt16</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uint32AtIndex:" title="uint32AtIndex:"></a>
+	<h3 class="subsubtitle method-title">uint32AtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>UInt32</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UInt32)uint32AtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>UInt32</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>UInt32</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uint64AtIndex:" title="uint64AtIndex:"></a>
+	<h3 class="subsubtitle method-title">uint64AtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>UInt64</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UInt64)uint64AtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>UInt64</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>UInt64</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uint8AtIndex:" title="uint8AtIndex:"></a>
+	<h3 class="subsubtitle method-title">uint8AtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>UInt8</code> value located at the specified index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UInt8)uint8AtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The character index that will be returned as a <code>UInt8</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>UInt8</code> value from the character at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ETBitTampering.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 EstebanTorres. All rights reserved. (Last updated: 2013-08-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
