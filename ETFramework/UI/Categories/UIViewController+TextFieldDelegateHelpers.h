@@ -7,14 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+ `UIViewController (TextFieldDelegateHelpers)` is a helper category that "automatically" handles `UITextFieldDelegate` calls.
+ */
 @interface UIViewController (TextFieldDelegateHelpers)<UITextFieldDelegate>
-
-@property (weak, nonatomic) IBOutlet UILabel *viewTitleLabel;
-@property (weak, nonatomic) IBOutlet UIButton *leftButton;
-@property (weak, nonatomic) IBOutlet UIButton *rightButton;
-
+/**------------------------------------------------------------------------------------------------------------------
+ * @name UITextField handling methods.
+ * ------------------------------------------------------------------------------------------------------------------
+ */
+/**
+ Iterates through the list of `UIView` subviews and calling `checkTextField:`.
+ 
+ This methods calls `resignFirstResponder` to each `UITextField`.
+ 
+ @see -[UIView checkTextField:]
+ */
 - (void) resignTextFields;
+
+/**
+ Iterates through the list of `UIView` subviews from the main `view` and calls `cleanTextFields` to each of them.
+ 
+ @see -[UIView cleanTextField:]
+ */
 - (void) cleanTextFields;
 
 @end
