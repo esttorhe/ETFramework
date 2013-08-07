@@ -42,7 +42,6 @@
 		1110D40917A0C5EA009A7411 /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EE17A0C5EA009A7411 /* ETString.m */; };
 		1110D40A17A0C5EA009A7411 /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F117A0C5EA009A7411 /* ETCoreData.m */; };
 		1110D40D17A0C5EA009A7411 /* ETAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3FA17A0C5EA009A7411 /* ETAlert.m */; };
-		11A3661317AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A3661217AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m */; };
 		11D0223F17A86E8800892D75 /* UITextField+EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */; };
 		11D0224017A86E8800892D75 /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223A17A86E8800892D75 /* UITextField+VisualHelpers.m */; };
 		11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */; };
@@ -102,8 +101,6 @@
 		1110D3F217A0C5EA009A7411 /* ETDataFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDataFramework.h; sourceTree = "<group>"; };
 		1110D3F917A0C5EA009A7411 /* ETAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlert.h; sourceTree = "<group>"; };
 		1110D3FA17A0C5EA009A7411 /* ETAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlert.m; sourceTree = "<group>"; };
-		11A3661117AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ETFramework_MBProgressHUD.h"; sourceTree = "<group>"; };
-		11A3661217AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ETFramework_MBProgressHUD.m"; sourceTree = "<group>"; };
 		11D0223717A86E8800892D75 /* UITextField+EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmailValidation.h"; sourceTree = "<group>"; };
 		11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmailValidation.m"; sourceTree = "<group>"; };
 		11D0223917A86E8800892D75 /* UITextField+VisualHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VisualHelpers.h"; sourceTree = "<group>"; };
@@ -300,19 +297,9 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		11A3661017AB1F4900C066CB /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				11A3661117AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.h */,
-				11A3661217AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
 		11D0223617A86E8800892D75 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				11A3661017AB1F4900C066CB /* MBProgressHUD */,
 				11D0223717A86E8800892D75 /* UITextField+EmailValidation.h */,
 				11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */,
 				11D0223917A86E8800892D75 /* UITextField+VisualHelpers.h */,
@@ -501,7 +488,6 @@
 				11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */,
 				11D0224217A86E8800892D75 /* UIViewController+TextFieldDelegateHelpers.m in Sources */,
 				11D0227C17A9541F00892D75 /* UIViewController+ETFramework.m in Sources */,
-				11A3661317AB1F8C00C066CB /* UIViewController+ETFramework_MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
