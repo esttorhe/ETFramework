@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/esttorhe/ETFramework.png?branch=master)](https://travis-ci.org/esttorhe/ETFramework)
+
 #`ETFramework`
 Basic helper framework for iOS projects. 
 Some categories and helper classes for easy and quicker development.
