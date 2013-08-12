@@ -1,4 +1,4 @@
-WORKSPACE = ETFrameworkDemo/ETFrameworkDemo.xcworkspace
+WORKSPACE = ETFrameworkDemo.xcworkspace
 SCHEME = ETFrameworkDemo
 
 test:
