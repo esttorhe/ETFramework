@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/esttorhe/ETFramework.png?branch=master)](https://travis-ci.org/esttorhe/ETFramework)
+[![Coverage Status](https://coveralls.io/repos/esttorhe/ETFramework/badge.png)](https://coveralls.io/r/esttorhe/ETFramework)
 
 #`ETFramework`
 Basic helper framework for iOS projects. 
