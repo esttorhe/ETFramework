@@ -14,6 +14,6 @@ before_install:
 #    - XCWORKSPACE=ETFrameworkDemo.xcworkspace
 #    - ~/travis-utils/osx-cibuild.sh ETFrameworkDemo.xcworkspace Release
 script:
-    - make test-with-coverage
+    - make -f ../Makefile test-with-coverage
 after_success:
-    - make send-coverage
+    - make -f ../Makefile send-coverage
