@@ -5,6 +5,4 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-    #import "ETDataFramework.h"
-    #import "ETCoreFramework.h"
 #endif
