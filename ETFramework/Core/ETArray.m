@@ -16,6 +16,14 @@
 
 + (NSArray*) sortDescriptor:(NSString *)column ascending:(BOOL)ascending
 {
+    if (isNilOrNull(column)) {
+#ifdef ETFRAMEWORK_RAISE_ASSERTS
+        ETAssert(!columnIsEmpty, @"Column parameter cannot be nil.");
+#else
+        return nil;
+#endif
+    }
+    
     NSSortDescriptor* sd = [[NSSortDescriptor alloc] initWithKey:column ascending:ascending];
     return [NSArray arrayWithObject:sd];    
 }
@@ -32,6 +40,14 @@
 
 - (NSArray*) sortByField:(NSString *)field ascending:(BOOL)ascending
 {
+    if (isNilOrNull(field)) {
+#ifdef ETFRAMEWORK_RAISE_ASSERTS
+        ETAssert(!fieldIsEmpty, @"Field parameter cannot be nil.");
+#else
+        return nil;
+#endif
+    }
+    
     return [self sortedArrayUsingDescriptors:[NSArray sortDescriptor:field ascending:ascending]]; 
 }
 
