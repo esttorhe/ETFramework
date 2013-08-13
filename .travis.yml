@@ -12,6 +12,6 @@ before_install:
     - cd ETFrameworkDemo
 script:
     - rake -f ../Rakefile test
-    - cd $TRAVIS_BUILD_DIR
+    - ls -ln
 after_success:
     - make send-coverage
