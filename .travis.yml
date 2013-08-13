@@ -12,6 +12,6 @@ before_install:
     - cd ETFrameworkDemo && pod install
 script:
     - rake -f ../Rakefile test
+    - make -f ../Makefile generate-coverage
 after_success:
-	- make -f ../Makefile generate-coverage
     - make -f ../Makefile send-coverage
