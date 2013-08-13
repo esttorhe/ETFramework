@@ -749,6 +749,7 @@
 				);
 				INFOPLIST_FILE = "ETFrameworkDemo/ETFrameworkDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -761,6 +762,7 @@
 				GCC_PREFIX_HEADER = "ETFrameworkDemo/ETFrameworkDemo-Prefix.pch";
 				INFOPLIST_FILE = "ETFrameworkDemo/ETFrameworkDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
