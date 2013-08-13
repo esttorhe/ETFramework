@@ -124,7 +124,11 @@
 /**
  Formats the `NSNumber` instance as a currency `NSString` using the current `NSLocale`.
  
+ This method internally calls `-formatAsCurrency:` with `[NSLocale currentLocale]` as the `NSLocale` parameter.
+ 
  @return A `NSString` object containing the `NSNumber` instance formatted using the current `NSLocale`.
+ 
+ @see -formatAsCurrency:
  */
 - (NSString *) formatAsCurrency;
 
