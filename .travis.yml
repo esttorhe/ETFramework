@@ -9,11 +9,8 @@ before_install:
     - brew update
     - brew uninstall xctool && brew install https://raw.github.com/fpotter/homebrew/246a1439dab49542d4531ad7e1bac7048151f601/Library/Formula/xctool.rb
     - gem install cocoapods -v 0.23.0
-    - cd ETFrameworkDemo && pod install
-#    - XCCONFIGURATION=Release
-#    - XCWORKSPACE=ETFrameworkDemo.xcworkspace
-#    - ~/travis-utils/osx-cibuild.sh ETFrameworkDemo.xcworkspace Release
+    - cd ETFrameworkDemo && pod install && cd $TRAVIS_BUILD_DIR
 script:
-    - make -f ../Makefile test-with-coverage
+    - rake test
 after_success:
-    - make -f ../Makefile send-coverage
+    - make send-coverage
