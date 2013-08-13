@@ -7,7 +7,8 @@ language: objective-c
 before_install:
     - sudo easy_install cpp-coveralls
     - brew update
-    - brew uninstall xctool && brew install https://raw.github.com/fpotter/homebrew/246a1439dab49542d4531ad7e1bac7048151f601/Library/Formula/xctool.rb
+    - brew uninstall xctool && brew install https://raw.github.com/mxcl/homebrew/d16f2ab6ed82703fbc8d075df51903442035eb5c/Library/Formula/xctool.rb
+    # https://raw.github.com/fpotter/homebrew/246a1439dab49542d4531ad7e1bac7048151f601/Library/Formula/xctool.rb
     - cd ETFrameworkDemo
 script:
     - rake -f ../Rakefile test
