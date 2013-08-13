@@ -1,5 +1,5 @@
 //
-//  ETFrameworkTests.h
+//  ETArrayTests.h
 //  ETFrameworkTests
 //
 //  Created by Esteban Torres on 8/12/13.
