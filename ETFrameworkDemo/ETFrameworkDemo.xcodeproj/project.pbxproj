@@ -46,7 +46,8 @@
 		116D00D317B9A61F0078280C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1110D3B117A0C5A1009A7411 /* UIKit.framework */; };
 		116D00D417B9A61F0078280C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1110D3B317A0C5A1009A7411 /* Foundation.framework */; };
 		116D00DA17B9A61F0078280C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 116D00D817B9A61F0078280C /* InfoPlist.strings */; };
-		116D00DD17B9A61F0078280C /* ETFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 116D00DC17B9A61F0078280C /* ETFrameworkTests.m */; };
+		116D00DD17B9A61F0078280C /* ETArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 116D00DC17B9A61F0078280C /* ETArrayTests.m */; };
+		11B844D717BABE0100EAC6CA /* ETBitTamperingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B844D617BABE0100EAC6CA /* ETBitTamperingTests.m */; };
 		11D0223F17A86E8800892D75 /* UITextField+EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */; };
 		11D0224017A86E8800892D75 /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223A17A86E8800892D75 /* UITextField+VisualHelpers.m */; };
 		11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */; };
@@ -128,9 +129,11 @@
 		116D00D117B9A61F0078280C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		116D00D717B9A61F0078280C /* ETFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ETFrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		116D00D917B9A61F0078280C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		116D00DB17B9A61F0078280C /* ETFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETFrameworkTests.h; sourceTree = "<group>"; };
-		116D00DC17B9A61F0078280C /* ETFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETFrameworkTests.m; sourceTree = "<group>"; };
+		116D00DB17B9A61F0078280C /* ETArrayTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETArrayTests.h; sourceTree = "<group>"; };
+		116D00DC17B9A61F0078280C /* ETArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETArrayTests.m; sourceTree = "<group>"; };
 		116D00DE17B9A61F0078280C /* ETFrameworkTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ETFrameworkTests-Prefix.pch"; sourceTree = "<group>"; };
+		11B844D517BABE0100EAC6CA /* ETBitTamperingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETBitTamperingTests.h; sourceTree = "<group>"; };
+		11B844D617BABE0100EAC6CA /* ETBitTamperingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETBitTamperingTests.m; sourceTree = "<group>"; };
 		11D0223717A86E8800892D75 /* UITextField+EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmailValidation.h"; sourceTree = "<group>"; };
 		11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmailValidation.m"; sourceTree = "<group>"; };
 		11D0223917A86E8800892D75 /* UITextField+VisualHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VisualHelpers.h"; sourceTree = "<group>"; };
@@ -349,8 +352,10 @@
 		116D00D517B9A61F0078280C /* ETFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				116D00DB17B9A61F0078280C /* ETFrameworkTests.h */,
-				116D00DC17B9A61F0078280C /* ETFrameworkTests.m */,
+				116D00DB17B9A61F0078280C /* ETArrayTests.h */,
+				116D00DC17B9A61F0078280C /* ETArrayTests.m */,
+				11B844D517BABE0100EAC6CA /* ETBitTamperingTests.h */,
+				11B844D617BABE0100EAC6CA /* ETBitTamperingTests.m */,
 				116D00D617B9A61F0078280C /* Supporting Files */,
 			);
 			path = ETFrameworkTests;
@@ -652,7 +657,8 @@
 				11EBFF1617BA8AF8008FAD15 /* ETObject.m in Sources */,
 				11EBFF1717BA8AF8008FAD15 /* ETString.h in Sources */,
 				11EBFF1817BA8AF8008FAD15 /* ETString.m in Sources */,
-				116D00DD17B9A61F0078280C /* ETFrameworkTests.m in Sources */,
+				116D00DD17B9A61F0078280C /* ETArrayTests.m in Sources */,
+				11B844D717BABE0100EAC6CA /* ETBitTamperingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +700,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -740,6 +748,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7962F5F6E8F4D99A8D9C820 /* Pods-ETFrameworkDemo.xcconfig */;
 			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETFrameworkDemo/ETFrameworkDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -758,6 +768,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7962F5F6E8F4D99A8D9C820 /* Pods-ETFrameworkDemo.xcconfig */;
 			buildSettings = {
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETFrameworkDemo/ETFrameworkDemo-Prefix.pch";
 				INFOPLIST_FILE = "ETFrameworkDemo/ETFrameworkDemo-Info.plist";
