@@ -7,6 +7,8 @@
 //
 
 #import "ETFrameworkTests.h"
+#import "ETDataFramework.h"
+#import "ETCoreFramework.h"
 
 @implementation ETFrameworkTests
 
@@ -24,9 +26,10 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testSortDescriptors
 {
-    STFail(@"Unit tests are not implemented yet in ETFrameworkTests");
+    STAssertNotNil([NSArray sortDescriptor:@"ETField"], @"Cannot generated sort descriptor.");
+    STAssertNil([NSArray sortDescriptor:nil], @"Sort descriptor creation should fail when passed nil.");
 }
 
 @end
