@@ -7,9 +7,11 @@ language: objective-c
 before_install:
     - sudo easy_install cpp-coveralls
     - brew update
-    - brew uninstall xctool && brew install https://raw.github.com/fpotter/homebrew/246a1439dab49542d4531ad7e1bac7048151f601/Library/Formula/xctool.rb && cd ETFrameworkDemo
+    - brew uninstall xctool && brew install https://raw.github.com/fpotter/homebrew/246a1439dab49542d4531ad7e1bac7048151f601/Library/Formula/xctool.rb 
+    - cd ETFrameworkDemo
 script:
     - rake -f ../Rakefile test
-    - cd ETFrameworkTest && ls -ln
+    - cd ETFrameworkTest 
+    - ls -lna
 after_success:
     - make send-coverage
