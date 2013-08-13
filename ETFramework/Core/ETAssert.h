@@ -30,6 +30,12 @@ static const int ddLogLevel = LOG_LEVEL_ERROR;
 
 #endif
 
+#define THROW_EXCEPTION 0
+#ifdef kSHOULD_THROW_EXCEPTION
+    #undef THROW_EXCEPTION
+    #define THROW_EXCEPTION kSHOULD_THROW_EXCEPTION
+#endif
+
 /**
  ** If you define the PRE-PROCESSOR MACRO kSHOULD_THROW_EXCEPTION=1 this will cause the assertion to 
  ** throw an exception instead of calling the 'abort()' method.
@@ -45,7 +51,7 @@ do { \
 if(!(expression)) { \
 NSString *__ETAssert_temp_string = [NSString stringWithFormat: @"### Assertion failure: (%s) | %s | %s:%d. %@ ###", #expression, __func__, __FILE__, __LINE__, [NSString stringWithFormat: @"\t-\t" __VA_ARGS__]]; \
 Log(@"%@", __ETAssert_temp_string);\
-if(kSHOULD_THROW_EXCEPTION){\
+if(THROW_EXCEPTION){\
 @throw [NSException exceptionWithName:[NSString stringWithFormat:@"Assertion Failure - %s", #expression] reason:[NSString stringWithUTF8String:#expression] userInfo:@{@"File":[NSString stringWithUTF8String:__FILE__], @"Line":@(__LINE__), @"Function":[NSString stringWithUTF8String:__func__], @"Message":[NSString stringWithFormat: @"" __VA_ARGS__]}];\
 }\
 else{\
@@ -66,7 +72,7 @@ asm(".desc _crashreporter_info, 0x10");
 do { \
 if(!(expression)) { \
 NSString *__ETAssert_temp_string = [NSString stringWithFormat: @"### Assertion failure: (%s) | %s | %s:%d. %@ ###", #expression, __func__, __FILE__, __LINE__, [NSString stringWithFormat: @"\t-\t" __VA_ARGS__]]; \
-if(kSHOULD_THROW_EXCEPTION){\
+if(THROW_EXCEPTION){\
 @throw [NSException exceptionWithName:[NSString stringWithFormat:@"Assertion Failure - %s", #expression] reason:[NSString stringWithUTF8String:#expression] userInfo:@{@"File":[NSString stringWithUTF8String:__FILE__], @"Line":@(__LINE__), @"Function":[NSString stringWithUTF8String:__func__], @"Message":[NSString stringWithFormat: @"" __VA_ARGS__]}];\
 }\
 else{\
