@@ -8,8 +8,7 @@ before_install:
     - sudo easy_install cpp-coveralls
     - brew update
     - brew uninstall xctool && brew install https://raw.github.com/fpotter/homebrew/246a1439dab49542d4531ad7e1bac7048151f601/Library/Formula/xctool.rb
-    - gem install cocoapods -v 0.23.0
-    - cd ETFrameworkDemo && pod install
+    - cd ETFrameworkDemo
 script:
     - rake -f ../Rakefile test
 after_success:
