@@ -151,16 +151,5 @@
 	}
 }
 
-- (void) replaceUInt8:(UInt8)data AtIndex:(NSUInteger)index
-{
-	[self replaceBytesInRange:NSMakeRange(index, sizeof(data)) withBytes:&data];
-}
-
-- (UInt8) uint8AtIndex:(NSUInteger)index
-{
-	const char* bytes = [self bytes];
-	return (UInt8)bytes[index];
-}
-
 @end
 
