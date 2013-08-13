@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "116D00CF17B9A61F0078280C"
+               BuildableName = "ETFrameworkTests.octest"
+               BlueprintName = "ETFrameworkTests"
+               ReferencedContainer = "container:ETFrameworkDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
