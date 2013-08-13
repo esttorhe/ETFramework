@@ -1,6 +1,6 @@
 namespace :test do
   desc "Run the ETFramework Tests"
-  task :ios => :prepare do
+  task :ios do
     $ios_success = system("xctool -workspace ETFrameworkDemo.xcworkspace -scheme 'ETFrameworkTests' -sdk iphonesimulator -configuration Release test -test-sdk iphonesimulator")
   end
 end
