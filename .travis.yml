@@ -13,4 +13,5 @@ before_install:
 script:
     - rake -f ../Rakefile test
 after_success:
+	- make -f ../Makefile generate-coverage
     - make -f ../Makefile send-coverage
