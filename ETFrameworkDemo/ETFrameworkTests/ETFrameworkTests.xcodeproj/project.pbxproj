@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11B8455817BADF2200EAC6CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11B8455617BADF2200EAC6CA /* InfoPlist.strings */; };
+		11B845AE17BAE00300EAC6CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845A917BAE00300EAC6CA /* SystemConfiguration.framework */; };
+		11B845AF17BAE00300EAC6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845AA17BAE00300EAC6CA /* UIKit.framework */; };
+		11B845B017BAE00300EAC6CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845AB17BAE00300EAC6CA /* Foundation.framework */; };
+		11B845B117BAE00300EAC6CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845AC17BAE00300EAC6CA /* CoreGraphics.framework */; };
+		11B845B217BAE00300EAC6CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845AD17BAE00300EAC6CA /* CoreData.framework */; };
+		11B8462F17BAE34E00EAC6CA /* ETArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8462C17BAE34E00EAC6CA /* ETArrayTests.m */; };
+		11B8463017BAE34E00EAC6CA /* ETBitTamperingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8462E17BAE34E00EAC6CA /* ETBitTamperingTests.m */; };
+		11B8463217BAE36200EAC6CA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B8463117BAE36200EAC6CA /* SenTestingKit.framework */; };
+		11B8466817BAE43A00EAC6CA /* ETArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8464617BAE43A00EAC6CA /* ETArray.m */; };
+		11B8466917BAE43A00EAC6CA /* ETBitTampering.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8464917BAE43A00EAC6CA /* ETBitTampering.m */; };
+		11B8466A17BAE43A00EAC6CA /* ETDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8464D17BAE43A00EAC6CA /* ETDictionary.m */; };
+		11B8466B17BAE43A00EAC6CA /* ETObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8464F17BAE43A00EAC6CA /* ETObject.m */; };
+		11B8466C17BAE43A00EAC6CA /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8465117BAE43A00EAC6CA /* ETString.m */; };
+		11B8466D17BAE43A00EAC6CA /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8465417BAE43A00EAC6CA /* ETCoreData.m */; };
+		11B8466E17BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh in Resources */ = {isa = PBXBuildFile; fileRef = 11B8465717BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh */; };
+		11B8466F17BAE43A00EAC6CA /* markImportantKeywords.sh in Resources */ = {isa = PBXBuildFile; fileRef = 11B8465817BAE43A00EAC6CA /* markImportantKeywords.sh */; };
+		11B8467017BAE43A00EAC6CA /* UITextField+EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8465D17BAE43A00EAC6CA /* UITextField+EmailValidation.m */; };
+		11B8467117BAE43A00EAC6CA /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8465F17BAE43A00EAC6CA /* UITextField+VisualHelpers.m */; };
+		11B8467217BAE43A00EAC6CA /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8466117BAE43A00EAC6CA /* UIView+KeyboardHelpers.m */; };
+		11B8467317BAE43A00EAC6CA /* UIViewController+ETFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8466317BAE43A00EAC6CA /* UIViewController+ETFramework.m */; };
+		11B8467417BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8466517BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m */; };
+		11B8467517BAE43A00EAC6CA /* ETAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8466717BAE43A00EAC6CA /* ETAlert.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11B8454A17BADF2200EAC6CA /* ETFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B8455517BADF2200EAC6CA /* ETFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ETFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		11B8455717BADF2200EAC6CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11B8455C17BADF2200EAC6CA /* ETFrameworkTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ETFrameworkTests-Prefix.pch"; sourceTree = "<group>"; };
+		11B845A917BAE00300EAC6CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		11B845AA17BAE00300EAC6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		11B845AB17BAE00300EAC6CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		11B845AC17BAE00300EAC6CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		11B845AD17BAE00300EAC6CA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		11B8462B17BAE34E00EAC6CA /* ETArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETArrayTests.h; sourceTree = "<group>"; };
+		11B8462C17BAE34E00EAC6CA /* ETArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETArrayTests.m; sourceTree = "<group>"; };
+		11B8462D17BAE34E00EAC6CA /* ETBitTamperingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETBitTamperingTests.h; sourceTree = "<group>"; };
+		11B8462E17BAE34E00EAC6CA /* ETBitTamperingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETBitTamperingTests.m; sourceTree = "<group>"; };
+		11B8463117BAE36200EAC6CA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		11B8464517BAE43A00EAC6CA /* ETArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETArray.h; sourceTree = "<group>"; };
+		11B8464617BAE43A00EAC6CA /* ETArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETArray.m; sourceTree = "<group>"; };
+		11B8464717BAE43A00EAC6CA /* ETAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAssert.h; sourceTree = "<group>"; };
+		11B8464817BAE43A00EAC6CA /* ETBitTampering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETBitTampering.h; sourceTree = "<group>"; };
+		11B8464917BAE43A00EAC6CA /* ETBitTampering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETBitTampering.m; sourceTree = "<group>"; };
+		11B8464A17BAE43A00EAC6CA /* ETCoreFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCoreFramework.h; sourceTree = "<group>"; };
+		11B8464B17BAE43A00EAC6CA /* ETDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDebugLog.h; sourceTree = "<group>"; };
+		11B8464C17BAE43A00EAC6CA /* ETDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDictionary.h; sourceTree = "<group>"; };
+		11B8464D17BAE43A00EAC6CA /* ETDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDictionary.m; sourceTree = "<group>"; };
+		11B8464E17BAE43A00EAC6CA /* ETObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETObject.h; sourceTree = "<group>"; };
+		11B8464F17BAE43A00EAC6CA /* ETObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETObject.m; sourceTree = "<group>"; };
+		11B8465017BAE43A00EAC6CA /* ETString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETString.h; sourceTree = "<group>"; };
+		11B8465117BAE43A00EAC6CA /* ETString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETString.m; sourceTree = "<group>"; };
+		11B8465317BAE43A00EAC6CA /* ETCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCoreData.h; sourceTree = "<group>"; };
+		11B8465417BAE43A00EAC6CA /* ETCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCoreData.m; sourceTree = "<group>"; };
+		11B8465517BAE43A00EAC6CA /* ETDataFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDataFramework.h; sourceTree = "<group>"; };
+		11B8465717BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = autoIncrementeBuildVersion.sh; sourceTree = "<group>"; };
+		11B8465817BAE43A00EAC6CA /* markImportantKeywords.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = markImportantKeywords.sh; sourceTree = "<group>"; };
+		11B8465B17BAE43A00EAC6CA /* ETUICategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETUICategories.h; sourceTree = "<group>"; };
+		11B8465C17BAE43A00EAC6CA /* UITextField+EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmailValidation.h"; sourceTree = "<group>"; };
+		11B8465D17BAE43A00EAC6CA /* UITextField+EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmailValidation.m"; sourceTree = "<group>"; };
+		11B8465E17BAE43A00EAC6CA /* UITextField+VisualHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VisualHelpers.h"; sourceTree = "<group>"; };
+		11B8465F17BAE43A00EAC6CA /* UITextField+VisualHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VisualHelpers.m"; sourceTree = "<group>"; };
+		11B8466017BAE43A00EAC6CA /* UIView+KeyboardHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KeyboardHelpers.h"; sourceTree = "<group>"; };
+		11B8466117BAE43A00EAC6CA /* UIView+KeyboardHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KeyboardHelpers.m"; sourceTree = "<group>"; };
+		11B8466217BAE43A00EAC6CA /* UIViewController+ETFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ETFramework.h"; sourceTree = "<group>"; };
+		11B8466317BAE43A00EAC6CA /* UIViewController+ETFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ETFramework.m"; sourceTree = "<group>"; };
+		11B8466417BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TextFieldDelegateHelpers.h"; sourceTree = "<group>"; };
+		11B8466517BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TextFieldDelegateHelpers.m"; sourceTree = "<group>"; };
+		11B8466617BAE43A00EAC6CA /* ETAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlert.h; sourceTree = "<group>"; };
+		11B8466717BAE43A00EAC6CA /* ETAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlert.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11B8454617BADF2200EAC6CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B8463217BAE36200EAC6CA /* SenTestingKit.framework in Frameworks */,
+				11B845AE17BAE00300EAC6CA /* SystemConfiguration.framework in Frameworks */,
+				11B845AF17BAE00300EAC6CA /* UIKit.framework in Frameworks */,
+				11B845B017BAE00300EAC6CA /* Foundation.framework in Frameworks */,
+				11B845B117BAE00300EAC6CA /* CoreGraphics.framework in Frameworks */,
+				11B845B217BAE00300EAC6CA /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11B8453E17BADF0A00EAC6CA = {
+			isa = PBXGroup;
+			children = (
+				11B8464317BAE43A00EAC6CA /* ETFramework */,
+				11B8455317BADF2200EAC6CA /* ETFrameworkTests */,
+				11B8454C17BADF2200EAC6CA /* Frameworks */,
+				11B8454B17BADF2200EAC6CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11B8454B17BADF2200EAC6CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11B8454A17BADF2200EAC6CA /* ETFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11B8454C17BADF2200EAC6CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11B8463117BAE36200EAC6CA /* SenTestingKit.framework */,
+				11B845A917BAE00300EAC6CA /* SystemConfiguration.framework */,
+				11B845AA17BAE00300EAC6CA /* UIKit.framework */,
+				11B845AB17BAE00300EAC6CA /* Foundation.framework */,
+				11B845AC17BAE00300EAC6CA /* CoreGraphics.framework */,
+				11B845AD17BAE00300EAC6CA /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11B8455317BADF2200EAC6CA /* ETFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				11B8462B17BAE34E00EAC6CA /* ETArrayTests.h */,
+				11B8462C17BAE34E00EAC6CA /* ETArrayTests.m */,
+				11B8462D17BAE34E00EAC6CA /* ETBitTamperingTests.h */,
+				11B8462E17BAE34E00EAC6CA /* ETBitTamperingTests.m */,
+				11B8455417BADF2200EAC6CA /* Supporting Files */,
+			);
+			path = ETFrameworkTests;
+			sourceTree = "<group>";
+		};
+		11B8455417BADF2200EAC6CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11B8455517BADF2200EAC6CA /* ETFrameworkTests-Info.plist */,
+				11B8455617BADF2200EAC6CA /* InfoPlist.strings */,
+				11B8455C17BADF2200EAC6CA /* ETFrameworkTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11B8464317BAE43A00EAC6CA /* ETFramework */ = {
+			isa = PBXGroup;
+			children = (
+				11B8464417BAE43A00EAC6CA /* Core */,
+				11B8465217BAE43A00EAC6CA /* Data */,
+				11B8465617BAE43A00EAC6CA /* Resources */,
+				11B8465917BAE43A00EAC6CA /* UI */,
+			);
+			name = ETFramework;
+			path = ../../ETFramework;
+			sourceTree = "<group>";
+		};
+		11B8464417BAE43A00EAC6CA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				11B8464517BAE43A00EAC6CA /* ETArray.h */,
+				11B8464617BAE43A00EAC6CA /* ETArray.m */,
+				11B8464717BAE43A00EAC6CA /* ETAssert.h */,
+				11B8464817BAE43A00EAC6CA /* ETBitTampering.h */,
+				11B8464917BAE43A00EAC6CA /* ETBitTampering.m */,
+				11B8464A17BAE43A00EAC6CA /* ETCoreFramework.h */,
+				11B8464B17BAE43A00EAC6CA /* ETDebugLog.h */,
+				11B8464C17BAE43A00EAC6CA /* ETDictionary.h */,
+				11B8464D17BAE43A00EAC6CA /* ETDictionary.m */,
+				11B8464E17BAE43A00EAC6CA /* ETObject.h */,
+				11B8464F17BAE43A00EAC6CA /* ETObject.m */,
+				11B8465017BAE43A00EAC6CA /* ETString.h */,
+				11B8465117BAE43A00EAC6CA /* ETString.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		11B8465217BAE43A00EAC6CA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				11B8465317BAE43A00EAC6CA /* ETCoreData.h */,
+				11B8465417BAE43A00EAC6CA /* ETCoreData.m */,
+				11B8465517BAE43A00EAC6CA /* ETDataFramework.h */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		11B8465617BAE43A00EAC6CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11B8465717BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh */,
+				11B8465817BAE43A00EAC6CA /* markImportantKeywords.sh */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11B8465917BAE43A00EAC6CA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				11B8465A17BAE43A00EAC6CA /* Categories */,
+				11B8466617BAE43A00EAC6CA /* ETAlert.h */,
+				11B8466717BAE43A00EAC6CA /* ETAlert.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		11B8465A17BAE43A00EAC6CA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				11B8465B17BAE43A00EAC6CA /* ETUICategories.h */,
+				11B8465C17BAE43A00EAC6CA /* UITextField+EmailValidation.h */,
+				11B8465D17BAE43A00EAC6CA /* UITextField+EmailValidation.m */,
+				11B8465E17BAE43A00EAC6CA /* UITextField+VisualHelpers.h */,
+				11B8465F17BAE43A00EAC6CA /* UITextField+VisualHelpers.m */,
+				11B8466017BAE43A00EAC6CA /* UIView+KeyboardHelpers.h */,
+				11B8466117BAE43A00EAC6CA /* UIView+KeyboardHelpers.m */,
+				11B8466217BAE43A00EAC6CA /* UIViewController+ETFramework.h */,
+				11B8466317BAE43A00EAC6CA /* UIViewController+ETFramework.m */,
+				11B8466417BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.h */,
+				11B8466517BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11B8454917BADF2200EAC6CA /* ETFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B8455D17BADF2200EAC6CA /* Build configuration list for PBXNativeTarget "ETFrameworkTests" */;
+			buildPhases = (
+				11B8454517BADF2200EAC6CA /* Sources */,
+				11B8454617BADF2200EAC6CA /* Frameworks */,
+				11B8454717BADF2200EAC6CA /* Resources */,
+				11B8454817BADF2200EAC6CA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETFrameworkTests;
+			productName = ETFrameworkTests;
+			productReference = 11B8454A17BADF2200EAC6CA /* ETFrameworkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11B8453F17BADF0A00EAC6CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 11B8454217BADF0A00EAC6CA /* Build configuration list for PBXProject "ETFrameworkTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11B8453E17BADF0A00EAC6CA;
+			productRefGroup = 11B8454B17BADF2200EAC6CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11B8454917BADF2200EAC6CA /* ETFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11B8454717BADF2200EAC6CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B8455817BADF2200EAC6CA /* InfoPlist.strings in Resources */,
+				11B8466E17BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh in Resources */,
+				11B8466F17BAE43A00EAC6CA /* markImportantKeywords.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11B8454817BADF2200EAC6CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11B8454517BADF2200EAC6CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B8462F17BAE34E00EAC6CA /* ETArrayTests.m in Sources */,
+				11B8463017BAE34E00EAC6CA /* ETBitTamperingTests.m in Sources */,
+				11B8466817BAE43A00EAC6CA /* ETArray.m in Sources */,
+				11B8466917BAE43A00EAC6CA /* ETBitTampering.m in Sources */,
+				11B8466A17BAE43A00EAC6CA /* ETDictionary.m in Sources */,
+				11B8466B17BAE43A00EAC6CA /* ETObject.m in Sources */,
+				11B8466C17BAE43A00EAC6CA /* ETString.m in Sources */,
+				11B8466D17BAE43A00EAC6CA /* ETCoreData.m in Sources */,
+				11B8467017BAE43A00EAC6CA /* UITextField+EmailValidation.m in Sources */,
+				11B8467117BAE43A00EAC6CA /* UITextField+VisualHelpers.m in Sources */,
+				11B8467217BAE43A00EAC6CA /* UIView+KeyboardHelpers.m in Sources */,
+				11B8467317BAE43A00EAC6CA /* UIViewController+ETFramework.m in Sources */,
+				11B8467417BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m in Sources */,
+				11B8467517BAE43A00EAC6CA /* ETAlert.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11B8455617BADF2200EAC6CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11B8455717BADF2200EAC6CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11B8454317BADF0A00EAC6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		11B8454417BADF0A00EAC6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		11B8455E17BADF2200EAC6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ETFrameworkTests/ETFrameworkTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ETFrameworkTests/ETFrameworkTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		11B8455F17BADF2200EAC6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ETFrameworkTests/ETFrameworkTests-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ETFrameworkTests/ETFrameworkTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11B8454217BADF0A00EAC6CA /* Build configuration list for PBXProject "ETFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B8454317BADF0A00EAC6CA /* Debug */,
+				11B8454417BADF0A00EAC6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B8455D17BADF2200EAC6CA /* Build configuration list for PBXNativeTarget "ETFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B8455E17BADF2200EAC6CA /* Debug */,
+				11B8455F17BADF2200EAC6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11B8453F17BADF0A00EAC6CA /* Project object */;
+}

@@ -42,12 +42,6 @@
 		1110D40917A0C5EA009A7411 /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EE17A0C5EA009A7411 /* ETString.m */; };
 		1110D40A17A0C5EA009A7411 /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F117A0C5EA009A7411 /* ETCoreData.m */; };
 		1110D40D17A0C5EA009A7411 /* ETAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3FA17A0C5EA009A7411 /* ETAlert.m */; };
-		116D00D217B9A61F0078280C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116D00D117B9A61F0078280C /* SenTestingKit.framework */; };
-		116D00D317B9A61F0078280C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1110D3B117A0C5A1009A7411 /* UIKit.framework */; };
-		116D00D417B9A61F0078280C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1110D3B317A0C5A1009A7411 /* Foundation.framework */; };
-		116D00DA17B9A61F0078280C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 116D00D817B9A61F0078280C /* InfoPlist.strings */; };
-		116D00DD17B9A61F0078280C /* ETArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 116D00DC17B9A61F0078280C /* ETArrayTests.m */; };
-		11B844D717BABE0100EAC6CA /* ETBitTamperingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B844D617BABE0100EAC6CA /* ETBitTamperingTests.m */; };
 		11D0223F17A86E8800892D75 /* UITextField+EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */; };
 		11D0224017A86E8800892D75 /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223A17A86E8800892D75 /* UITextField+VisualHelpers.m */; };
 		11D0224117A86E8800892D75 /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0223C17A86E8800892D75 /* UIView+KeyboardHelpers.m */; };
@@ -65,24 +59,6 @@
 		11D55C8017A1CE1A003E6DB3 /* ETServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C7F17A1CE1A003E6DB3 /* ETServer.m */; };
 		11D55C8317A1D1A7003E6DB3 /* ETLocalDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C8217A1D1A7003E6DB3 /* ETLocalDatabase.m */; };
 		11D55C8517A1E81B003E6DB3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D55C8417A1E81A003E6DB3 /* SystemConfiguration.framework */; };
-		11EBFF0C17BA8AF8008FAD15 /* ETAssert.h in Sources */ = {isa = PBXBuildFile; fileRef = 11D0224517A87F8A00892D75 /* ETAssert.h */; };
-		11EBFF0D17BA8AF8008FAD15 /* ETArray.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3DF17A0C5EA009A7411 /* ETArray.h */; };
-		11EBFF0E17BA8AF8008FAD15 /* ETArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E017A0C5EA009A7411 /* ETArray.m */; };
-		11EBFF0F17BA8AF8008FAD15 /* ETBitTampering.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E117A0C5EA009A7411 /* ETBitTampering.h */; };
-		11EBFF1017BA8AF8008FAD15 /* ETBitTampering.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E217A0C5EA009A7411 /* ETBitTampering.m */; };
-		11EBFF1117BA8AF8008FAD15 /* ETCoreFramework.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E317A0C5EA009A7411 /* ETCoreFramework.h */; };
-		11EBFF1217BA8AF8008FAD15 /* ETDebugLog.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E417A0C5EA009A7411 /* ETDebugLog.h */; };
-		11EBFF1317BA8AF8008FAD15 /* ETDictionary.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E517A0C5EA009A7411 /* ETDictionary.h */; };
-		11EBFF1417BA8AF8008FAD15 /* ETDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E617A0C5EA009A7411 /* ETDictionary.m */; };
-		11EBFF1517BA8AF8008FAD15 /* ETObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E917A0C5EA009A7411 /* ETObject.h */; };
-		11EBFF1617BA8AF8008FAD15 /* ETObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EA17A0C5EA009A7411 /* ETObject.m */; };
-		11EBFF1717BA8AF8008FAD15 /* ETString.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3ED17A0C5EA009A7411 /* ETString.h */; };
-		11EBFF1817BA8AF8008FAD15 /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EE17A0C5EA009A7411 /* ETString.m */; };
-		11EBFF1917BA8B06008FAD15 /* ETCoreData.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F017A0C5EA009A7411 /* ETCoreData.h */; };
-		11EBFF1A17BA8B06008FAD15 /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F117A0C5EA009A7411 /* ETCoreData.m */; };
-		11EBFF1B17BA8B06008FAD15 /* ETDataFramework.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F217A0C5EA009A7411 /* ETDataFramework.h */; };
-		11EBFF1C17BA8B1D008FAD15 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1110D3B717A0C5A1009A7411 /* CoreData.framework */; };
-		2738EF9E4EAC45AB94E5EE7B /* libPods-ETFrameworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738112AF1CD4FFE90506FB8 /* libPods-ETFrameworkTests.a */; };
 		78D89065DE6B481092D894C5 /* libPods-ETFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D81C3E358D1942B7A67330E1 /* libPods-ETFrameworkDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -125,15 +101,7 @@
 		1110D3F217A0C5EA009A7411 /* ETDataFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDataFramework.h; sourceTree = "<group>"; };
 		1110D3F917A0C5EA009A7411 /* ETAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlert.h; sourceTree = "<group>"; };
 		1110D3FA17A0C5EA009A7411 /* ETAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlert.m; sourceTree = "<group>"; };
-		116D00D017B9A61F0078280C /* ETFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		116D00D117B9A61F0078280C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		116D00D717B9A61F0078280C /* ETFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ETFrameworkTests-Info.plist"; sourceTree = "<group>"; };
-		116D00D917B9A61F0078280C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		116D00DB17B9A61F0078280C /* ETArrayTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETArrayTests.h; sourceTree = "<group>"; };
-		116D00DC17B9A61F0078280C /* ETArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETArrayTests.m; sourceTree = "<group>"; };
-		116D00DE17B9A61F0078280C /* ETFrameworkTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ETFrameworkTests-Prefix.pch"; sourceTree = "<group>"; };
-		11B844D517BABE0100EAC6CA /* ETBitTamperingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETBitTamperingTests.h; sourceTree = "<group>"; };
-		11B844D617BABE0100EAC6CA /* ETBitTamperingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETBitTamperingTests.m; sourceTree = "<group>"; };
 		11D0223717A86E8800892D75 /* UITextField+EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmailValidation.h"; sourceTree = "<group>"; };
 		11D0223817A86E8800892D75 /* UITextField+EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmailValidation.m"; sourceTree = "<group>"; };
 		11D0223917A86E8800892D75 /* UITextField+VisualHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VisualHelpers.h"; sourceTree = "<group>"; };
@@ -189,18 +157,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		116D00CC17B9A61F0078280C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11EBFF1C17BA8B1D008FAD15 /* CoreData.framework in Frameworks */,
-				116D00D217B9A61F0078280C /* SenTestingKit.framework in Frameworks */,
-				116D00D317B9A61F0078280C /* UIKit.framework in Frameworks */,
-				116D00D417B9A61F0078280C /* Foundation.framework in Frameworks */,
-				2738EF9E4EAC45AB94E5EE7B /* libPods-ETFrameworkTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -208,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				1110D3B917A0C5A1009A7411 /* ETFrameworkDemo */,
-				116D00D517B9A61F0078280C /* ETFrameworkTests */,
 				1110D3B017A0C5A1009A7411 /* Frameworks */,
 				1110D3AF17A0C5A1009A7411 /* Products */,
 				C7962F5F6E8F4D99A8D9C820 /* Pods-ETFrameworkDemo.xcconfig */,
@@ -220,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				1110D3AE17A0C5A1009A7411 /* ETFrameworkDemo.app */,
-				116D00D017B9A61F0078280C /* ETFrameworkTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -349,28 +303,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		116D00D517B9A61F0078280C /* ETFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				116D00DB17B9A61F0078280C /* ETArrayTests.h */,
-				116D00DC17B9A61F0078280C /* ETArrayTests.m */,
-				11B844D517BABE0100EAC6CA /* ETBitTamperingTests.h */,
-				11B844D617BABE0100EAC6CA /* ETBitTamperingTests.m */,
-				116D00D617B9A61F0078280C /* Supporting Files */,
-			);
-			path = ETFrameworkTests;
-			sourceTree = "<group>";
-		};
-		116D00D617B9A61F0078280C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				116D00D717B9A61F0078280C /* ETFrameworkTests-Info.plist */,
-				116D00D817B9A61F0078280C /* InfoPlist.strings */,
-				116D00DE17B9A61F0078280C /* ETFrameworkTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		11D0223617A86E8800892D75 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,26 +371,6 @@
 			productReference = 1110D3AE17A0C5A1009A7411 /* ETFrameworkDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		116D00CF17B9A61F0078280C /* ETFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 116D00E117B9A61F0078280C /* Build configuration list for PBXNativeTarget "ETFrameworkTests" */;
-			buildPhases = (
-				44E442C0E6024630AEA0D13E /* Check Pods Manifest.lock */,
-				116D00CB17B9A61F0078280C /* Sources */,
-				116D00CC17B9A61F0078280C /* Frameworks */,
-				116D00CD17B9A61F0078280C /* Resources */,
-				116D00CE17B9A61F0078280C /* ShellScript */,
-				E359163F714C4508A328369E /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ETFrameworkTests;
-			productName = ETFrameworkTests;
-			productReference = 116D00D017B9A61F0078280C /* ETFrameworkTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -482,7 +394,6 @@
 			projectRoot = "";
 			targets = (
 				1110D3AD17A0C5A1009A7411 /* ETFrameworkDemo */,
-				116D00CF17B9A61F0078280C /* ETFrameworkTests */,
 				112211BF17B0209D001B5DB7 /* ETFramework_Documentation */,
 			);
 		};
@@ -498,14 +409,6 @@
 				1110D3C817A0C5A1009A7411 /* Default@2x.png in Resources */,
 				1110D3CA17A0C5A1009A7411 /* Default-568h@2x.png in Resources */,
 				11D55C7D17A1CBA7003E6DB3 /* adn.cer in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		116D00CD17B9A61F0078280C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				116D00DA17B9A61F0078280C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,34 +428,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"EstebanTorres\";\ncompanyID=\"es.estebantorr\";\ncompanyURL=\"http://estebantorr.es\";\ntarget=\"iphoneos\";\noutputPath=\"~/Code/Personal/Help/ETFramework\";\nprojectName=\"ETFramework\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${projectName}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--merge-categories \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--install-docset \\\n--print-information-block-titles \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--ignore \"*.m\" \\\n--include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\" \\\n--index-desc \"${PROJECT_DIR}/README.md\" \\\n\"${PROJECT_DIR}/../${projectName}\"";
-		};
-		116D00CE17B9A61F0078280C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		44E442C0E6024630AEA0D13E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
 		71E5F93CE802438D891263C3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -582,21 +457,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-ETFrameworkDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E359163F714C4508A328369E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-ETFrameworkTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -637,31 +497,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		116D00CB17B9A61F0078280C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11EBFF1917BA8B06008FAD15 /* ETCoreData.h in Sources */,
-				11EBFF1A17BA8B06008FAD15 /* ETCoreData.m in Sources */,
-				11EBFF1B17BA8B06008FAD15 /* ETDataFramework.h in Sources */,
-				11EBFF0C17BA8AF8008FAD15 /* ETAssert.h in Sources */,
-				11EBFF0D17BA8AF8008FAD15 /* ETArray.h in Sources */,
-				11EBFF0E17BA8AF8008FAD15 /* ETArray.m in Sources */,
-				11EBFF0F17BA8AF8008FAD15 /* ETBitTampering.h in Sources */,
-				11EBFF1017BA8AF8008FAD15 /* ETBitTampering.m in Sources */,
-				11EBFF1117BA8AF8008FAD15 /* ETCoreFramework.h in Sources */,
-				11EBFF1217BA8AF8008FAD15 /* ETDebugLog.h in Sources */,
-				11EBFF1317BA8AF8008FAD15 /* ETDictionary.h in Sources */,
-				11EBFF1417BA8AF8008FAD15 /* ETDictionary.m in Sources */,
-				11EBFF1517BA8AF8008FAD15 /* ETObject.h in Sources */,
-				11EBFF1617BA8AF8008FAD15 /* ETObject.m in Sources */,
-				11EBFF1717BA8AF8008FAD15 /* ETString.h in Sources */,
-				11EBFF1817BA8AF8008FAD15 /* ETString.m in Sources */,
-				116D00DD17B9A61F0078280C /* ETArrayTests.m in Sources */,
-				11B844D717BABE0100EAC6CA /* ETBitTamperingTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -669,14 +504,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				1110D3BD17A0C5A1009A7411 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		116D00D817B9A61F0078280C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				116D00D917B9A61F0078280C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -792,38 +619,6 @@
 			};
 			name = Release;
 		};
-		116D00DF17B9A61F0078280C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDC956FB98EE472C8CDE68D0 /* Pods-ETFrameworkTests.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ETFrameworkTests/ETFrameworkTests-Prefix.pch";
-				INFOPLIST_FILE = "ETFrameworkTests/ETFrameworkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		116D00E017B9A61F0078280C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDC956FB98EE472C8CDE68D0 /* Pods-ETFrameworkTests.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ETFrameworkTests/ETFrameworkTests-Prefix.pch";
-				INFOPLIST_FILE = "ETFrameworkTests/ETFrameworkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -850,15 +645,6 @@
 			buildConfigurations = (
 				112211C017B0209D001B5DB7 /* Debug */,
 				112211C117B0209D001B5DB7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		116D00E117B9A61F0078280C /* Build configuration list for PBXNativeTarget "ETFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				116D00DF17B9A61F0078280C /* Debug */,
-				116D00E017B9A61F0078280C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
