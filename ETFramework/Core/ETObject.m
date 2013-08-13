@@ -15,9 +15,6 @@ static char const * const kETUserDictionaryKey = "kETUserDictionaryKey";
 #pragma mark - NSObject (ETFramework)
 @implementation NSObject (ETFramework)
 
-/* ! Compares if the first value is null then return the second value.
- 
- */
 id is_null(id A, id B)
 {
     if (!A
@@ -29,6 +26,13 @@ id is_null(id A, id B)
     }
     
     return nil;
+}
+
+/*
+ */
+bool isNilOrNull(id object)
+{
+    return (object == nil || [[NSNull null] isEqual:object]);
 }
 
 - (void) attachUserInfo:(id)userInfo

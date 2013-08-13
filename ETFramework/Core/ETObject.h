@@ -27,14 +27,22 @@
 /**
  Dynamically attach an object to a `NSObject` instance using the `runtime` framework with a predefined key.
  
+ This method calls internally `-attachUserInfo:forKey:` with a predefined internal key.
+ 
  @param userInfo The object that will be 'linked' to the `NSObject` instance.
+ 
+ @see -attachUserInfo:forKey:
  */
 - (void) attachUserInfo:(id)userInfo;
 
 /**
  Retrieves the object attached to the `NSObject` instance 'linked' with the predefined key.
  
+ This method calls internally `-userInfoForKey:` with a predefined internal key.
+ 
  @return The object attached to the `NSObject` instance 'linked' with the predefined key.
+ 
+ @see -userInfoForKey:
  */
 - (id) userInfo;
 
@@ -63,9 +71,13 @@
 /**
  Initializes an `NSObject` using the provided `NSDictionary` object and KVC.
  
+ This method internally calls `-initFromDictionary:dateFormatter:` with `[NSDateFormatter ETDefaultDateFormatter]` as the `NSDateFormatter` parameter.
+ 
  @param dictionary The `NSDictionary` object that will be used to 'feed' the `NSObject` properties.
  
  @return An initialized `NSObject` instance with the properties set to the matching keys/fields provided by the defined `NSDictionary`.
+ 
+ @see -initFromDictionary:dateFormatter:
  */
 - (id) initFromDictionary:(NSDictionary*)dictionary;
 
@@ -83,9 +95,13 @@
 /**
  Updates an `NSObject` using the provided `NSDictionary` object and KVC.
  
+ This methods internally calls `-updateDataWithDictionary:dateFormatter:` with `[NSDateFormatter ETDefaultDateFormatter]` as the `NSDateFormatter` parameter.
+ 
  @param dictionary The `NSDictionary` object that will be used to 'feed' the `NSObject` properties.
  
  @return The `NSObject` instance with its properties set to the matching keys/fields provided by the defined `NSDictionary`.
+ 
+ @see -updateDataWithDictionary:dateFormatter:
  */
 - (id) updateDataWithDictionary:(NSDictionary*)dictionary;
 
@@ -100,7 +116,13 @@
  */
 - (id) updateDataWithDictionary:(NSDictionary*)dictionary dateFormatter:(NSDateFormatter*)dateFormatter;
 
+/** Compares if the first value is null then return the second value.
+ */
 id is_null(id A, id B);
+
+/** Compares the `object` param agains `nil` and against `[NSNull null]` and returns the BOOLEAN comparison.
+ */
+bool isNilOrNull(id object);
 
 @end
 
