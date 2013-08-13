@@ -1,7 +1,7 @@
 namespace :test do
   desc "Run the ETFramework Tests"
   task :ios do
-    $ios_success = system("xctool -workspace ETFrameworkDemo.xcworkspace -scheme 'ETFrameworkTests' -sdk iphonesimulator -configuration Release test -test-sdk iphonesimulator")
+    $ios_success = system("xctool -workspace ETFrameworkDemo.xcworkspace -scheme 'ETFrameworkTests' -sdk iphonesimulator -configuration Debug test -test-sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES ONLY_ACTIVE_ARCH=NO")
   end
 end
 
