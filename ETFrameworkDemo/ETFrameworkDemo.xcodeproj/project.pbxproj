@@ -64,7 +64,25 @@
 		11D55C8017A1CE1A003E6DB3 /* ETServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C7F17A1CE1A003E6DB3 /* ETServer.m */; };
 		11D55C8317A1D1A7003E6DB3 /* ETLocalDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D55C8217A1D1A7003E6DB3 /* ETLocalDatabase.m */; };
 		11D55C8517A1E81B003E6DB3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D55C8417A1E81A003E6DB3 /* SystemConfiguration.framework */; };
-		C91B5E4546FE4AD08794C676 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 991F027E5F8644C8BF7A5685 /* libPods.a */; };
+		11EBFF0C17BA8AF8008FAD15 /* ETAssert.h in Sources */ = {isa = PBXBuildFile; fileRef = 11D0224517A87F8A00892D75 /* ETAssert.h */; };
+		11EBFF0D17BA8AF8008FAD15 /* ETArray.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3DF17A0C5EA009A7411 /* ETArray.h */; };
+		11EBFF0E17BA8AF8008FAD15 /* ETArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E017A0C5EA009A7411 /* ETArray.m */; };
+		11EBFF0F17BA8AF8008FAD15 /* ETBitTampering.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E117A0C5EA009A7411 /* ETBitTampering.h */; };
+		11EBFF1017BA8AF8008FAD15 /* ETBitTampering.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E217A0C5EA009A7411 /* ETBitTampering.m */; };
+		11EBFF1117BA8AF8008FAD15 /* ETCoreFramework.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E317A0C5EA009A7411 /* ETCoreFramework.h */; };
+		11EBFF1217BA8AF8008FAD15 /* ETDebugLog.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E417A0C5EA009A7411 /* ETDebugLog.h */; };
+		11EBFF1317BA8AF8008FAD15 /* ETDictionary.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E517A0C5EA009A7411 /* ETDictionary.h */; };
+		11EBFF1417BA8AF8008FAD15 /* ETDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E617A0C5EA009A7411 /* ETDictionary.m */; };
+		11EBFF1517BA8AF8008FAD15 /* ETObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3E917A0C5EA009A7411 /* ETObject.h */; };
+		11EBFF1617BA8AF8008FAD15 /* ETObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EA17A0C5EA009A7411 /* ETObject.m */; };
+		11EBFF1717BA8AF8008FAD15 /* ETString.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3ED17A0C5EA009A7411 /* ETString.h */; };
+		11EBFF1817BA8AF8008FAD15 /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3EE17A0C5EA009A7411 /* ETString.m */; };
+		11EBFF1917BA8B06008FAD15 /* ETCoreData.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F017A0C5EA009A7411 /* ETCoreData.h */; };
+		11EBFF1A17BA8B06008FAD15 /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F117A0C5EA009A7411 /* ETCoreData.m */; };
+		11EBFF1B17BA8B06008FAD15 /* ETDataFramework.h in Sources */ = {isa = PBXBuildFile; fileRef = 1110D3F217A0C5EA009A7411 /* ETDataFramework.h */; };
+		11EBFF1C17BA8B1D008FAD15 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1110D3B717A0C5A1009A7411 /* CoreData.framework */; };
+		2738EF9E4EAC45AB94E5EE7B /* libPods-ETFrameworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738112AF1CD4FFE90506FB8 /* libPods-ETFrameworkTests.a */; };
+		78D89065DE6B481092D894C5 /* libPods-ETFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D81C3E358D1942B7A67330E1 /* libPods-ETFrameworkDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,8 +166,10 @@
 		11D55C8117A1D1A7003E6DB3 /* ETLocalDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLocalDatabase.h; sourceTree = "<group>"; };
 		11D55C8217A1D1A7003E6DB3 /* ETLocalDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLocalDatabase.m; sourceTree = "<group>"; };
 		11D55C8417A1E81A003E6DB3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		991F027E5F8644C8BF7A5685 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D95C05FD99914764BCD7D5E4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		2738112AF1CD4FFE90506FB8 /* libPods-ETFrameworkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ETFrameworkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7962F5F6E8F4D99A8D9C820 /* Pods-ETFrameworkDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETFrameworkDemo.xcconfig"; path = "Pods/Pods-ETFrameworkDemo.xcconfig"; sourceTree = SOURCE_ROOT; };
+		D81C3E358D1942B7A67330E1 /* libPods-ETFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ETFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC956FB98EE472C8CDE68D0 /* Pods-ETFrameworkTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETFrameworkTests.xcconfig"; path = "Pods/Pods-ETFrameworkTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +182,7 @@
 				1110D3B417A0C5A1009A7411 /* Foundation.framework in Frameworks */,
 				1110D3B617A0C5A1009A7411 /* CoreGraphics.framework in Frameworks */,
 				1110D3B817A0C5A1009A7411 /* CoreData.framework in Frameworks */,
-				C91B5E4546FE4AD08794C676 /* libPods.a in Frameworks */,
+				78D89065DE6B481092D894C5 /* libPods-ETFrameworkDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,9 +190,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EBFF1C17BA8B1D008FAD15 /* CoreData.framework in Frameworks */,
 				116D00D217B9A61F0078280C /* SenTestingKit.framework in Frameworks */,
 				116D00D317B9A61F0078280C /* UIKit.framework in Frameworks */,
 				116D00D417B9A61F0078280C /* Foundation.framework in Frameworks */,
+				2738EF9E4EAC45AB94E5EE7B /* libPods-ETFrameworkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +208,8 @@
 				116D00D517B9A61F0078280C /* ETFrameworkTests */,
 				1110D3B017A0C5A1009A7411 /* Frameworks */,
 				1110D3AF17A0C5A1009A7411 /* Products */,
-				D95C05FD99914764BCD7D5E4 /* Pods.xcconfig */,
+				C7962F5F6E8F4D99A8D9C820 /* Pods-ETFrameworkDemo.xcconfig */,
+				DDC956FB98EE472C8CDE68D0 /* Pods-ETFrameworkTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,8 +230,9 @@
 				1110D3B317A0C5A1009A7411 /* Foundation.framework */,
 				1110D3B517A0C5A1009A7411 /* CoreGraphics.framework */,
 				1110D3B717A0C5A1009A7411 /* CoreData.framework */,
-				991F027E5F8644C8BF7A5685 /* libPods.a */,
 				116D00D117B9A61F0078280C /* SenTestingKit.framework */,
+				D81C3E358D1942B7A67330E1 /* libPods-ETFrameworkDemo.a */,
+				2738112AF1CD4FFE90506FB8 /* libPods-ETFrameworkTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -395,11 +419,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1110D3D017A0C5A1009A7411 /* Build configuration list for PBXNativeTarget "ETFrameworkDemo" */;
 			buildPhases = (
-				C1942ABEC80B4CD8909C6DF3 /* Check Pods Manifest.lock */,
+				71E5F93CE802438D891263C3 /* Check Pods Manifest.lock */,
 				1110D3AA17A0C5A1009A7411 /* Sources */,
 				1110D3AB17A0C5A1009A7411 /* Frameworks */,
 				1110D3AC17A0C5A1009A7411 /* Resources */,
-				A2515A6765AF46D0BBFF6733 /* Copy Pods Resources */,
+				B4CBF850B6ED47988DEDDB25 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -414,10 +438,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 116D00E117B9A61F0078280C /* Build configuration list for PBXNativeTarget "ETFrameworkTests" */;
 			buildPhases = (
+				44E442C0E6024630AEA0D13E /* Check Pods Manifest.lock */,
 				116D00CB17B9A61F0078280C /* Sources */,
 				116D00CC17B9A61F0078280C /* Frameworks */,
 				116D00CD17B9A61F0078280C /* Resources */,
 				116D00CE17B9A61F0078280C /* ShellScript */,
+				E359163F714C4508A328369E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,8 +477,8 @@
 			projectRoot = "";
 			targets = (
 				1110D3AD17A0C5A1009A7411 /* ETFrameworkDemo */,
-				112211BF17B0209D001B5DB7 /* ETFramework_Documentation */,
 				116D00CF17B9A61F0078280C /* ETFrameworkTests */,
+				112211BF17B0209D001B5DB7 /* ETFramework_Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -508,22 +534,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-		A2515A6765AF46D0BBFF6733 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1942ABEC80B4CD8909C6DF3 /* Check Pods Manifest.lock */ = {
+		44E442C0E6024630AEA0D13E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,6 +547,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71E5F93CE802438D891263C3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4CBF850B6ED47988DEDDB25 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ETFrameworkDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E359163F714C4508A328369E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ETFrameworkTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -580,6 +636,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EBFF1917BA8B06008FAD15 /* ETCoreData.h in Sources */,
+				11EBFF1A17BA8B06008FAD15 /* ETCoreData.m in Sources */,
+				11EBFF1B17BA8B06008FAD15 /* ETDataFramework.h in Sources */,
+				11EBFF0C17BA8AF8008FAD15 /* ETAssert.h in Sources */,
+				11EBFF0D17BA8AF8008FAD15 /* ETArray.h in Sources */,
+				11EBFF0E17BA8AF8008FAD15 /* ETArray.m in Sources */,
+				11EBFF0F17BA8AF8008FAD15 /* ETBitTampering.h in Sources */,
+				11EBFF1017BA8AF8008FAD15 /* ETBitTampering.m in Sources */,
+				11EBFF1117BA8AF8008FAD15 /* ETCoreFramework.h in Sources */,
+				11EBFF1217BA8AF8008FAD15 /* ETDebugLog.h in Sources */,
+				11EBFF1317BA8AF8008FAD15 /* ETDictionary.h in Sources */,
+				11EBFF1417BA8AF8008FAD15 /* ETDictionary.m in Sources */,
+				11EBFF1517BA8AF8008FAD15 /* ETObject.h in Sources */,
+				11EBFF1617BA8AF8008FAD15 /* ETObject.m in Sources */,
+				11EBFF1717BA8AF8008FAD15 /* ETString.h in Sources */,
+				11EBFF1817BA8AF8008FAD15 /* ETString.m in Sources */,
 				116D00DD17B9A61F0078280C /* ETFrameworkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,7 +738,7 @@
 		};
 		1110D3D117A0C5A1009A7411 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D95C05FD99914764BCD7D5E4 /* Pods.xcconfig */;
+			baseConfigurationReference = C7962F5F6E8F4D99A8D9C820 /* Pods-ETFrameworkDemo.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETFrameworkDemo/ETFrameworkDemo-Prefix.pch";
@@ -683,7 +755,7 @@
 		};
 		1110D3D217A0C5A1009A7411 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D95C05FD99914764BCD7D5E4 /* Pods.xcconfig */;
+			baseConfigurationReference = C7962F5F6E8F4D99A8D9C820 /* Pods-ETFrameworkDemo.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETFrameworkDemo/ETFrameworkDemo-Prefix.pch";
@@ -709,6 +781,7 @@
 		};
 		116D00DF17B9A61F0078280C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC956FB98EE472C8CDE68D0 /* Pods-ETFrameworkTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -724,6 +797,7 @@
 		};
 		116D00E017B9A61F0078280C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC956FB98EE472C8CDE68D0 /* Pods-ETFrameworkTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -774,6 +848,7 @@
 				116D00E017B9A61F0078280C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
