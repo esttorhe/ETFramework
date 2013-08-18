@@ -5,11 +5,10 @@ branches:
 
 language: objective-c
 before_install:
-    - sudo easy_install cpp-coveralls
     - brew update
-    - brew uninstall xctool && brew install https://raw.github.com/fpotter/homebrew/246a1439dab49542d4531ad7e1bac7048151f601/Library/Formula/xctool.rb 
-    - cd ETFrameworkDemo
+    - brew uninstall xctool && brew install xctool
+    - sudo easy_install cpp-coveralls
 script:
-    - rake -f ../Rakefile test
+    - make test
 after_success:
-    - make -f ../Makefile send-coverage
+    - make send-coverage
