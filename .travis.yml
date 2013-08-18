@@ -14,4 +14,4 @@ script:
     - cd ETFrameworkTests
     - ls -lna
 after_success:
-    - make send-coverage
+    - make -f ../Makefile send-coverage
