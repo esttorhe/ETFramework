@@ -71,7 +71,11 @@
 
 - (void)testNSDate
 {
-    NSDate *date = [[NSDateFormatter ETDefaultJSONDateFormatter] dateFromString:@"1985-10-15T21:00:00Z"];
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.day = 15, components.month = 10, components.year = 1985;
+    components.hour = 21, components.minute = 0, components.second = 0;
+    components.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+    NSDate *date = [[NSCalendar currentCalendar] dateFromComponents:components];
     STAssertNotNil(date, @"Unable to parse string");
     STAssertEqualObjects([date formatMMDDYY], @"10/15/1985", @"formatMMDDYY [%@] returned an invalid object.", [date formatMMDDYY]);
     STAssertEqualObjects([date formatMonthDayYear], @"10-15-1985", @"formatMonthDayYear [%@] returned an invalid object.", [date formatMonthDayYear]);
@@ -83,7 +87,7 @@
     STAssertNotNil([date formatAsDeltaFromNow], @"formatAsDeltaFromNow[%@] returned a non-nil value.", [date formatAsDeltaFromNow]);
     date = [NSDate dateWithTimeIntervalSinceNow:20];
     STAssertNotNil([date formatAsDeltaFromNowWithTimeZoneAdjustment:NO], @"formatAsDeltaFromNowWithTimeZoneAdjustment:[%@] returned a non-nil value.", [date formatAsDeltaFromNowWithTimeZoneAdjustment:NO]);
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit fromDate:[NSDate date]];
+    components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit fromDate:[NSDate date]];
     components.day+=1;
     date = [[NSCalendar currentCalendar] dateFromComponents:components];
     STAssertNotNil([date formatAsDeltaFromNowWithTimeZoneAdjustment:YES], @"formatAsDeltaFromNowWithTimeZoneAdjustment:[%@] returned a non-nil value.", [date formatAsDeltaFromNowWithTimeZoneAdjustment:NO]);
