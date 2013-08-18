@@ -29,12 +29,8 @@ NSString * const kETDefuaultJSONDateFormatter   =   @"yyyy-MM-dd'T'HH:mm:ss'Z'";
 {
     id value = [self objectForKey:key];
     if (value != nil && ![value isKindOfClass:[NSNull class]])
-    {
         if (forClass == nil || [value isKindOfClass:forClass])
-        {
             return value;
-        }
-    }
     
     return nil;
 }
