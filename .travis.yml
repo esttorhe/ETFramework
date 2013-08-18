@@ -11,7 +11,5 @@ before_install:
     - cd ETFrameworkDemo
 script:
     - rake -f ../Rakefile test
-    - cd ETFrameworkTests
-    - ls -lna
 after_success:
     - make -f ../Makefile send-coverage
