@@ -1,3 +1,2 @@
 send-coverage:
-	coveralls \
-		--verbose
+	coveralls -r ETFramework --verbose
