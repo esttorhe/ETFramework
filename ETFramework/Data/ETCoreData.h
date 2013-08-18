@@ -395,16 +395,23 @@ typedef NS_ENUM(NSInteger, kPredefinedExpression) {
  */
 - (id) updateObjectFromJson:(id)jsonDictionary entityName:(NSString *)entityName predicate:(NSPredicate*)predicate dateFormatter:(NSDateFormatter*)dateFormatter;
 
-/**
- Adds all the `JSON` objects from the provided `jsonArray` via executing `addSingleSelector` on each one of them.
+/** Adds all the `JSON` objects from the provided `jsonArray` via executing `addSingleSelector` on each one of them.
+ This method calls internally `-addObjectsAsArrayFromJsonArray:addSingleSelector:` as the seed for a new `NSSet`
  
  @param jsonArray The `JSON` array containing the `JSON` objects that will be added to the database.
- 
  @param addSingleSelector The specific `selector` that will be called with each object as a paramter to be added to the database.
- 
  @return A `NSSet` containing all the `NSManagedObject` added to the database.
+ @see -addObjectsAsArrayFromJsonArray:addSingleSelector:
  */
-- (NSSet*) addObjectsFromJsonArray:(id)jsonArray addSingleSelector:(SEL)addSingleSelector;
+- (NSSet *)addObjectsFromJsonArray:(id)jsonArray addSingleSelector:(SEL)addSingleSelector;
+
+/** Adds all the `JSON` objects from the provided `jsonArray` via executing `addSingleSelector` on each one of them.
+ 
+ @param jsonArray The `JSON` array containing the `JSON` objects that will be added to the database.
+ @param addSingleSelector The specific `selector` that will be called with each object as a paramter to be added to the database.
+ @return A `NSArray` containing all the `NSManagedObject` added to the database.
+ */
+- (NSArray *)addObjectsAsArrayFromJsonArray:(id)jsonArray addSingleSelector:(SEL)addSingleSelector;
 
 /**------------------------------------------------------------------------------------------------------------------
  * @name Other methods

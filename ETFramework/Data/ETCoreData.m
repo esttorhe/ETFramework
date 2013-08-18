@@ -414,13 +414,18 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
     return obj;
 }
 
-- (NSSet*) addObjectsFromJsonArray:(id)jsonArray addSingleSelector:(SEL)addSingleSelector
+- (NSSet *) addObjectsFromJsonArray:(id)jsonArray addSingleSelector:(SEL)addSingleSelector
 {
-    NSMutableSet* results = nil;
+    return [NSSet setWithArray:[self addObjectsAsArrayFromJsonArray:jsonArray addSingleSelector:addSingleSelector]];
+}
+
+- (NSArray *)addObjectsAsArrayFromJsonArray:(id)jsonArray addSingleSelector:(SEL)addSingleSelector
+{
+    NSMutableArray* results = nil;
     
     if (jsonArray != nil && addSingleSelector != nil && [self respondsToSelector:addSingleSelector])
     {
-        results = [NSMutableSet set];
+        results = [NSMutableArray array];
         
         for (id node in jsonArray)
         {
@@ -436,7 +441,7 @@ static NSString * const ET_DEFAULT_CORE_DATA_IDENTIFIER_KEYPATH = @"id";
         }
     }
     
-    return [NSSet setWithSet:results];
+    return [NSArray arrayWithArray:results];
 }
 
 - (NSPredicate*) identifierPredicate:(id)identifier
