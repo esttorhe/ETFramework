@@ -1,3 +1,7 @@
+`ETFramework CocoaPods Status`
+=====================
+![version](http://cocoapod-badges.herokuapp.com/v/ETFramework/badge.svg)
+![platform](http://cocoapod-badges.herokuapp.com/p/ETFramework/badge.svg)
 [![Build Status](https://travis-ci.org/esttorhe/ETFramework.png?branch=master)](https://travis-ci.org/esttorhe/ETFramework)
 [![Coverage Status](https://coveralls.io/repos/esttorhe/ETFramework/badge.png)](https://coveralls.io/r/esttorhe/ETFramework)
 
