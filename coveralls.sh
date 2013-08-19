@@ -10,7 +10,7 @@ trim()
 }
 
 # declare BUILT_PRODUCTS_DIR CURRENT_ARCH OBJECT_FILE_DIR_normal SRCROOT OBJROOT 
-declare -r xctoolVars=$(xctool -workspace 'ETFrameworkDemo/ETFrameworkDemo.xcworkspace' -scheme 'ETFrameworkDemo' -showBuildSettings | egrep '(BUILT_PRODUCTS_DIR)|(CURRENT_ARCH)|(OBJECT_FILE_DIR_normal)|(SRCROOT)|(OBJROOT)' |  egrep -v 'Pods')
+declare -r xctoolVars=$(xctool -showBuildSettings | egrep '(BUILT_PRODUCTS_DIR)|(CURRENT_ARCH)|(OBJECT_FILE_DIR_normal)|(SRCROOT)|(OBJROOT)' |  egrep -v 'Pods')
 while read line; do
 	declare key=$(echo "${line}" | cut -d "=" -f1)
 	declare value=$(echo "${line}" | cut -d "=" -f2)
@@ -24,12 +24,12 @@ declare -r gcov_dir="${OBJECT_FILE_DIR_normal}/${CURRENT_ARCH}/"
 generateGcov()
 {
 	#  doesn't set output dir to gcov...
-	pushd "${gcov_dir}"
+	cd "${gcov_dir}"
 	for file in ${gcov_dir}/*.gcda
 	do
 		gcov-4.2 "${file}" -o "${gcov_dir}"
 	done
-	popd
+	cd -
 }
 
 copyGcovToProjectDir()
