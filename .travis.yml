@@ -13,4 +13,4 @@ before_install:
 script:
     - make test
 after_success:
-    - make send-coverage
+    - ./coveralls.sh -r ./ -e ETFrameworkDemo -e documentation --verbose
