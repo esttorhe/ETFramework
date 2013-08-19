@@ -1,0 +1,7 @@
+[
+  "-workspace", "ETFrameworkDemo/ETFrameworkDemo.xcworkspace",
+  "-scheme", "ETFrameworkDemo",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-arch", "i386"
+]
