@@ -73,7 +73,7 @@
 - (void)testNSDate
 {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    calendar.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+    calendar.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT-6"];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.day = 15, components.month = 10, components.year = 1985;
     components.hour = 21, components.minute = 0, components.second = 0;
@@ -102,14 +102,14 @@
     
     components.day = 15, components.month = 10, components.year = 1985, components.hour = 6;
     date = [calendar dateFromComponents:components];
-    STAssertEqualObjects([date dayOfWeek], @"Tuesday", @"dayOfWeek returned wrong day for 1985-10-15 (Tuesday). %@", [components.date dayOfWeek]);
+    STAssertEqualObjects([date dayOfWeek], @"Tuesday", @"dayOfWeek returned wrong day for 1985-10-15 (Tuesday). %@", [date dayOfWeek]);
     STAssertEqualObjects([date monthOfYear], @"October", @"monthOfYear returned a wrong year. %@", [date monthOfYear]);
     STAssertEqualObjects([date dayOfMonth], @"15th", @"dayOfMonth returned a wrong day (15th). %@", [date dayOfMonth]);
     STAssertTrue([date numberOfYearsUntilNow] > 0, @"numbeOfYearsUntilNow returned a wrong number. %d", [date numberOfYearsUntilNow]);
     
     components.hour = 6, components.minute = 0, components.second = 0;
-    STAssertEqualObjects([[calendar dateFromComponents:components] timeOfDay], @"12:00 AM", @"timeOfDay returned a wrong time. %@", [[calendar dateFromComponents:components] timeOfDay]);
-    STAssertEqualObjects([[calendar dateFromComponents:components] verboseTimeOfDay], @"Tuesday, October 15th 12:00 AM", @"verboseTimeOfDay returned a wrong time. %@", [[calendar dateFromComponents:components] verboseTimeOfDay]);
+    STAssertEqualObjects([[calendar dateFromComponents:components] timeOfDay], @"6:00 AM", @"timeOfDay returned a wrong time. %@", [[calendar dateFromComponents:components] timeOfDay]);
+    STAssertEqualObjects([[calendar dateFromComponents:components] verboseTimeOfDay], @"Tuesday, October 15th 6:00 AM", @"verboseTimeOfDay returned a wrong time. %@", [[calendar dateFromComponents:components] verboseTimeOfDay]);
 
     STAssertNotNil([NSBundle versionLabel], @"Version returned an empty value.");
     STAssertNotNil([NSBundle bundleIdentifier], @"Bundle Identifier returned an empty value.");
