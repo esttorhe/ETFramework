@@ -10,6 +10,7 @@
 		110E141E17C13C4500344825 /* ETDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E141D17C13C4500344825 /* ETDictionaryTests.m */; };
 		110E142117C1487900344825 /* ETStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E142017C1487900344825 /* ETStringTests.m */; };
 		110E142417C2F0E800344825 /* NSBundle+ETFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E142317C2F0E800344825 /* NSBundle+ETFrameworkTests.m */; };
+		110E142717C3158600344825 /* ETObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E142617C3158600344825 /* ETObjectTests.m */; };
 		11B8455817BADF2200EAC6CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11B8455617BADF2200EAC6CA /* InfoPlist.strings */; };
 		11B845AE17BAE00300EAC6CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845A917BAE00300EAC6CA /* SystemConfiguration.framework */; };
 		11B845AF17BAE00300EAC6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845AA17BAE00300EAC6CA /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 		110E142017C1487900344825 /* ETStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETStringTests.m; sourceTree = "<group>"; };
 		110E142217C2F0E800344825 /* NSBundle+ETFrameworkTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ETFrameworkTests.h"; sourceTree = "<group>"; };
 		110E142317C2F0E800344825 /* NSBundle+ETFrameworkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ETFrameworkTests.m"; sourceTree = "<group>"; };
+		110E142517C3158600344825 /* ETObjectTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETObjectTests.h; sourceTree = "<group>"; };
+		110E142617C3158600344825 /* ETObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETObjectTests.m; sourceTree = "<group>"; };
 		11B8454A17BADF2200EAC6CA /* ETFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B8455517BADF2200EAC6CA /* ETFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ETFrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		11B8455717BADF2200EAC6CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				110E141D17C13C4500344825 /* ETDictionaryTests.m */,
 				110E141F17C1487900344825 /* ETStringTests.h */,
 				110E142017C1487900344825 /* ETStringTests.m */,
+				110E142517C3158600344825 /* ETObjectTests.h */,
+				110E142617C3158600344825 /* ETObjectTests.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				11B8467517BAE43A00EAC6CA /* ETAlert.m in Sources */,
 				110E141E17C13C4500344825 /* ETDictionaryTests.m in Sources */,
 				110E142417C2F0E800344825 /* NSBundle+ETFrameworkTests.m in Sources */,
+				110E142717C3158600344825 /* ETObjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
