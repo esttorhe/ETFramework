@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		110E141E17C13C4500344825 /* ETDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E141D17C13C4500344825 /* ETDictionaryTests.m */; };
 		110E142117C1487900344825 /* ETStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E142017C1487900344825 /* ETStringTests.m */; };
+		110E142417C2F0E800344825 /* NSBundle+ETFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E142317C2F0E800344825 /* NSBundle+ETFrameworkTests.m */; };
 		11B8455817BADF2200EAC6CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11B8455617BADF2200EAC6CA /* InfoPlist.strings */; };
 		11B845AE17BAE00300EAC6CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845A917BAE00300EAC6CA /* SystemConfiguration.framework */; };
 		11B845AF17BAE00300EAC6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B845AA17BAE00300EAC6CA /* UIKit.framework */; };
@@ -32,6 +33,7 @@
 		11B8467317BAE43A00EAC6CA /* UIViewController+ETFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8466317BAE43A00EAC6CA /* UIViewController+ETFramework.m */; };
 		11B8467417BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8466517BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m */; };
 		11B8467517BAE43A00EAC6CA /* ETAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8466717BAE43A00EAC6CA /* ETAlert.m */; };
+		F7C7CE0A17C74CA3AB270D16 /* libPods-ETFrameworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1446EA0A83E64E94823F5360 /* libPods-ETFrameworkTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		110E141D17C13C4500344825 /* ETDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDictionaryTests.m; sourceTree = "<group>"; };
 		110E141F17C1487900344825 /* ETStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETStringTests.h; sourceTree = "<group>"; };
 		110E142017C1487900344825 /* ETStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETStringTests.m; sourceTree = "<group>"; };
+		110E142217C2F0E800344825 /* NSBundle+ETFrameworkTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ETFrameworkTests.h"; sourceTree = "<group>"; };
+		110E142317C2F0E800344825 /* NSBundle+ETFrameworkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ETFrameworkTests.m"; sourceTree = "<group>"; };
 		11B8454A17BADF2200EAC6CA /* ETFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B8455517BADF2200EAC6CA /* ETFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ETFrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		11B8455717BADF2200EAC6CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 		11B8466517BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TextFieldDelegateHelpers.m"; sourceTree = "<group>"; };
 		11B8466617BAE43A00EAC6CA /* ETAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlert.h; sourceTree = "<group>"; };
 		11B8466717BAE43A00EAC6CA /* ETAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlert.m; sourceTree = "<group>"; };
+		1446EA0A83E64E94823F5360 /* libPods-ETFrameworkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ETFrameworkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA27DAAE03C0491DAE9E2DB6 /* Pods-ETFrameworkTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETFrameworkTests.xcconfig"; path = "../Pods/Pods-ETFrameworkTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 				11B845B017BAE00300EAC6CA /* Foundation.framework in Frameworks */,
 				11B845B117BAE00300EAC6CA /* CoreGraphics.framework in Frameworks */,
 				11B845B217BAE00300EAC6CA /* CoreData.framework in Frameworks */,
+				F7C7CE0A17C74CA3AB270D16 /* libPods-ETFrameworkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,7 @@
 				11B8455317BADF2200EAC6CA /* ETFrameworkTests */,
 				11B8454C17BADF2200EAC6CA /* Frameworks */,
 				11B8454B17BADF2200EAC6CA /* Products */,
+				DA27DAAE03C0491DAE9E2DB6 /* Pods-ETFrameworkTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +153,7 @@
 				11B845AB17BAE00300EAC6CA /* Foundation.framework */,
 				11B845AC17BAE00300EAC6CA /* CoreGraphics.framework */,
 				11B845AD17BAE00300EAC6CA /* CoreData.framework */,
+				1446EA0A83E64E94823F5360 /* libPods-ETFrameworkTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +163,8 @@
 			children = (
 				110E141B17C13C1200344825 /* Core */,
 				11B8455417BADF2200EAC6CA /* Supporting Files */,
+				110E142217C2F0E800344825 /* NSBundle+ETFrameworkTests.h */,
+				110E142317C2F0E800344825 /* NSBundle+ETFrameworkTests.m */,
 			);
 			path = ETFrameworkTests;
 			sourceTree = "<group>";
@@ -254,10 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11B8455D17BADF2200EAC6CA /* Build configuration list for PBXNativeTarget "ETFrameworkTests" */;
 			buildPhases = (
+				14F6069E3AA945E5A82E6783 /* Check Pods Manifest.lock */,
 				11B8454517BADF2200EAC6CA /* Sources */,
 				11B8454617BADF2200EAC6CA /* Frameworks */,
 				11B8454717BADF2200EAC6CA /* Resources */,
 				11B8454817BADF2200EAC6CA /* ShellScript */,
+				4746D8CF26294AB9A0B9B48C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +333,36 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		14F6069E3AA945E5A82E6783 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4746D8CF26294AB9A0B9B48C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-ETFrameworkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -327,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110E142117C1487900344825 /* ETStringTests.m in Sources */,
 				11B8462F17BAE34E00EAC6CA /* ETArrayTests.m in Sources */,
 				11B8463017BAE34E00EAC6CA /* ETBitTamperingTests.m in Sources */,
 				11B8466817BAE43A00EAC6CA /* ETArray.m in Sources */,
@@ -342,7 +386,7 @@
 				11B8467417BAE43A00EAC6CA /* UIViewController+TextFieldDelegateHelpers.m in Sources */,
 				11B8467517BAE43A00EAC6CA /* ETAlert.m in Sources */,
 				110E141E17C13C4500344825 /* ETDictionaryTests.m in Sources */,
-				110E142117C1487900344825 /* ETStringTests.m in Sources */,
+				110E142417C2F0E800344825 /* NSBundle+ETFrameworkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +418,7 @@
 		};
 		11B8455E17BADF2200EAC6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA27DAAE03C0491DAE9E2DB6 /* Pods-ETFrameworkTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -392,7 +437,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -416,6 +461,7 @@
 		};
 		11B8455F17BADF2200EAC6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA27DAAE03C0491DAE9E2DB6 /* Pods-ETFrameworkTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -433,7 +479,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETFrameworkTests/ETFrameworkTests-Prefix.pch";
