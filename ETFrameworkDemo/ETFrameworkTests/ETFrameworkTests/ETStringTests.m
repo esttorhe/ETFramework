@@ -112,7 +112,6 @@
     STAssertEqualObjects([[calendar dateFromComponents:components] verboseTimeOfDay], @"Tuesday, October 15th 12:00 AM", @"verboseTimeOfDay returned a wrong time. %@", [[calendar dateFromComponents:components] verboseTimeOfDay]);
 
     STAssertNotNil([NSBundle versionLabel], @"Version returned an empty value.");
-    STAssertNotNil([NSBundle copyrightLabel], @"Copyright Label returned an empty value.");
     STAssertNotNil([NSBundle bundleIdentifier], @"Bundle Identifier returned an empty value.");
 }
 
