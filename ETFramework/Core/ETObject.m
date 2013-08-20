@@ -134,14 +134,13 @@ bool isNilOrNull(id object)
                     // Here we check for values that could be defined with iVar name in the dictionary instead of the property
                     if(value == nil){
                         // Pull the ivar name out of the property.
-                        char *ivarPropertyName = property_copyAttributeValue((__bridge objc_property_t)(key), "V");
+                        NSString *ivarPropertyName = propDefs[key][@"iVar"];
+//                        ETDebugLog(@"Key: %@ | iVar: %@", key, ivarPropertyName);
                         // Make sure we're not dealing with a @dynamic property
                         if(ivarPropertyName != NULL){
                             // See if that lives in the incoming dictionary.
-                            NSString *ivarName = @(ivarPropertyName);
-                            value = [self getValueForKey:ivarName fromDictionary:dictionary propertiesArray:propDefs andDateFormatter:dateFormatter];
+                            value = [self getValueForKey:ivarPropertyName fromDictionary:dictionary propertiesArray:propDefs andDateFormatter:dateFormatter];
                         }
-                        free (ivarPropertyName);
                     }
                     
                     [self setValue:value forKey:key];
@@ -158,9 +157,10 @@ bool isNilOrNull(id object)
       propertiesArray:(NSDictionary *)propDefs
      andDateFormatter:(NSDateFormatter *)dateFormatter
 {
-    NSString *propertyClassString = [propDefs objectForKey:key];
+    NSString *propertyClassString = [propDefs objectForKey:key][@"ClassName"];
     Class propertyClass = NSClassFromString(propertyClassString);
     id value = [dictionary objectForKey:key];
+    ETDebugLog(@"Key: %@ | Property Class: %@ | Value: %@", key, propertyClass, value);
     
     if ([value isKindOfClass:[NSNull class]] || !value
         || [value isKindOfClass:[NSDictionary class]]){
@@ -185,6 +185,7 @@ bool isNilOrNull(id object)
         // If the caller provided a date formatter, try converting
         // the date into a string.
         value = [dateFormatter dateFromString:value];
+        ETDebugLog(@"### NSDate… %@", value);
     }
 //    else if (((attributeType == NSInteger16AttributeType) ||
 //                  (attributeType == NSInteger32AttributeType) ||
@@ -227,10 +228,16 @@ bool isNilOrNull(id object)
         NSArray* attrParts = [attrs componentsSeparatedByString:@","];
         if (attrParts != nil && attrParts.count > 0)
         {
-            NSString * className = [[attrParts objectAtIndex:0] substringFromIndex:1];
+            ETDebugLog(@"%@", attrParts);
+            NSString *className = [[attrParts objectAtIndex:0] substringFromIndex:1];
             className = [className stringByReplacingOccurrencesOfString:@"@" withString:@""];
             className = [className stringByReplacingOccurrencesOfString:@"\"" withString:@""];
-            [propDefs setObject:className forKey:propName];
+            
+            NSString *ivarName = [[attrParts objectAtIndex:3] substringFromIndex:1];
+            ivarName = [ivarName stringByReplacingOccurrencesOfString:@"@" withString:@""];
+            ivarName = [ivarName stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+            
+            [propDefs setObject:@{ @"ClassName" : className, @"iVar" : ivarName } forKey:propName];
         }
     }
     
