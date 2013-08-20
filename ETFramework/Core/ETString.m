@@ -442,17 +442,12 @@ static NSDateFormatter* kTimeOfDayFormatter = nil;
 
 + (NSString *) versionLabel
 {
-    return [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
-}
-
-+ (NSString *) copyrightLabel
-{
-    return [[NSBundle mainBundle] infoDictionary][@"NSHumanReadableCopyright"];
+    return [[NSBundle mainBundle] infoDictionary][(NSString *)kCFBundleVersionKey];
 }
 
 + (NSString *) bundleIdentifier
 {
-    return [[NSBundle mainBundle] infoDictionary][@"CFBundleIdentifier"];
+    return [[NSBundle mainBundle] infoDictionary][(NSString *)kCFBundleIdentifierKey];
 }
 
 @end

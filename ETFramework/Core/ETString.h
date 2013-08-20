@@ -324,11 +324,6 @@
 + (NSString *) versionLabel;
 
 /**
- Returns a `NSString` object containing the value for the `NSHumanReadableCopyright` `NSBundle` key.
- */
-+ (NSString *) copyrightLabel;
-
-/**
  Returns a `NSString` object containing the value for the `CFBundleIdentifier` `NSBundle` key.
  */
 + (NSString *) bundleIdentifier;
