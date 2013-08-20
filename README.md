@@ -16,7 +16,7 @@ In order to use it you first need to install [`CocoaPods`](http://cocoapods.org)
 
 Generate a `Podfile` and add this:
 
-`pod 'ETFramework', '~> 1.0.0'`
+`pod 'ETFramework', '~> 1'`
 
 Then run:
 ``` 
