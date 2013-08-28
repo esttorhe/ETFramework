@@ -26,8 +26,6 @@
 		11B8466B17BAE43A00EAC6CA /* ETObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8464F17BAE43A00EAC6CA /* ETObject.m */; };
 		11B8466C17BAE43A00EAC6CA /* ETString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8465117BAE43A00EAC6CA /* ETString.m */; };
 		11B8466D17BAE43A00EAC6CA /* ETCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8465417BAE43A00EAC6CA /* ETCoreData.m */; };
-		11B8466E17BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh in Resources */ = {isa = PBXBuildFile; fileRef = 11B8465717BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh */; };
-		11B8466F17BAE43A00EAC6CA /* markImportantKeywords.sh in Resources */ = {isa = PBXBuildFile; fileRef = 11B8465817BAE43A00EAC6CA /* markImportantKeywords.sh */; };
 		11B8467017BAE43A00EAC6CA /* UITextField+EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8465D17BAE43A00EAC6CA /* UITextField+EmailValidation.m */; };
 		11B8467117BAE43A00EAC6CA /* UITextField+VisualHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8465F17BAE43A00EAC6CA /* UITextField+VisualHelpers.m */; };
 		11B8467217BAE43A00EAC6CA /* UIView+KeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8466117BAE43A00EAC6CA /* UIView+KeyboardHelpers.m */; };
@@ -76,8 +74,6 @@
 		11B8465317BAE43A00EAC6CA /* ETCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCoreData.h; sourceTree = "<group>"; };
 		11B8465417BAE43A00EAC6CA /* ETCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCoreData.m; sourceTree = "<group>"; };
 		11B8465517BAE43A00EAC6CA /* ETDataFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDataFramework.h; sourceTree = "<group>"; };
-		11B8465717BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = autoIncrementeBuildVersion.sh; sourceTree = "<group>"; };
-		11B8465817BAE43A00EAC6CA /* markImportantKeywords.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = markImportantKeywords.sh; sourceTree = "<group>"; };
 		11B8465B17BAE43A00EAC6CA /* ETUICategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETUICategories.h; sourceTree = "<group>"; };
 		11B8465C17BAE43A00EAC6CA /* UITextField+EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmailValidation.h"; sourceTree = "<group>"; };
 		11B8465D17BAE43A00EAC6CA /* UITextField+EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmailValidation.m"; sourceTree = "<group>"; };
@@ -130,6 +126,13 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		110E142817C3C4B400344825 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		11B8453E17BADF0A00EAC6CA = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				110E141B17C13C1200344825 /* Core */,
+				110E142817C3C4B400344825 /* Data */,
 				11B8455417BADF2200EAC6CA /* Supporting Files */,
 				110E142217C2F0E800344825 /* NSBundle+ETFrameworkTests.h */,
 				110E142317C2F0E800344825 /* NSBundle+ETFrameworkTests.m */,
@@ -189,7 +193,6 @@
 			children = (
 				11B8464417BAE43A00EAC6CA /* Core */,
 				11B8465217BAE43A00EAC6CA /* Data */,
-				11B8465617BAE43A00EAC6CA /* Resources */,
 				11B8465917BAE43A00EAC6CA /* UI */,
 			);
 			name = ETFramework;
@@ -224,15 +227,6 @@
 				11B8465517BAE43A00EAC6CA /* ETDataFramework.h */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		11B8465617BAE43A00EAC6CA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				11B8465717BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh */,
-				11B8465817BAE43A00EAC6CA /* markImportantKeywords.sh */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		11B8465917BAE43A00EAC6CA /* UI */ = {
@@ -317,8 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B8455817BADF2200EAC6CA /* InfoPlist.strings in Resources */,
-				11B8466E17BAE43A00EAC6CA /* autoIncrementeBuildVersion.sh in Resources */,
-				11B8466F17BAE43A00EAC6CA /* markImportantKeywords.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

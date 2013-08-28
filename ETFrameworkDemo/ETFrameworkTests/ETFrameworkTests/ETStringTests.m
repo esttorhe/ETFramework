@@ -87,7 +87,7 @@
     STAssertNotNil([date formatUtcTimestamp], @"formatUtcTimestamp [%@] returned an invalid object.", [date formatUtcTimestamp]);
     STAssertNotNil([date formatUtcDate], @"formatUtcDate [%@] returned an invalid object.", [date formatUtcDate]);
     STAssertNotNil([date formatAsDeltaFromNow], @"formatAsDeltaFromNow[%@] returned a non-nil value.", [date formatAsDeltaFromNow]);
-    date = [NSDate dateWithTimeIntervalSinceNow:20];
+    date = [NSDate dateWithTimeIntervalSinceNow:86300];
     STAssertNotNil([date formatAsDeltaFromNowWithTimeZoneAdjustment:NO], @"formatAsDeltaFromNowWithTimeZoneAdjustment:[%@] returned a non-nil value.", [date formatAsDeltaFromNowWithTimeZoneAdjustment:NO]);
     components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit fromDate:[NSDate date]];
     components.day+=1;
